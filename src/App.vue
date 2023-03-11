@@ -1,11 +1,21 @@
 <template>
-  <nav>
+  <HeaderVue />
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  </nav> -->
+  <router-view />
+  <FooterVue />
 </template>
 
+<script>
+import HeaderVue from "./components/Header.vue";
+import FooterVue from "./components/Footer.vue";
+
+export default {
+  components: { HeaderVue, FooterVue },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
