@@ -45,10 +45,11 @@
         ></swiper-slide>
       </swiper>
     </div>
+    <SeeAll />
   </div>
-  <div></div>
 </template>
 <script>
+import SeeAll from "../SeeAll.vue";
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
@@ -67,6 +68,7 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+    SeeAll,
   },
   data() {
     return {

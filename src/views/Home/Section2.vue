@@ -15,22 +15,16 @@
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <router-link
-            :to="(name = 'About')"
-            class="d-flex align-items-center justify-content-end"
-            ><div class="lineseeall mx-3"></div>
-            See All
-          </router-link>
-        </div>
-      </div>
+      <SeeAll />
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import SeeAll from "../SeeAll.vue";
+export default {
+  components: { SeeAll },
+};
 </script>
 
 <style></style>
