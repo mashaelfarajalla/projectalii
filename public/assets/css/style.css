@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
-    background-color: #F2FAFA;
+    /* background-color: #F2FAFA; */
+    background: #f7f8fc;
     font-family: 'Poppins';
 }
 
@@ -34,7 +35,8 @@ nav form input.form-control {
     border-bottom: 1px solid #ced4da;
 }
 
-nav form button.btn-outline-success {
+nav form button.btn-outline-success,
+.homesection1 form button.btn-outline-success {
     background-color: #1E88E5;
     border: 0;
     color: white;
@@ -55,7 +57,8 @@ nav form button.btn-outline-success {
     color: #1E88E5;
 }
 
-nav form button.btn-outline-success:hover {
+nav form button.btn-outline-success:hover,
+.homesection1 form button.btn-outline-success:hover {
     background-color: white;
     border: 2px solid #1E88E5;
     color: #1E88E5;
@@ -127,18 +130,23 @@ nav ul.dropdown-menu {
     opacity: 0.6;
 }
 
+.homesection1 form input.form-control {
+    background-color: transparent;
+}
+
 /*Section1Home style end*/
 
 
 /*Section2Home style start*/
 .homesection2 {
-    height: 400px;
+    padding: 60px 0;
 
 }
 
 .homesection2 h2,
 .homesection3 h2,
-.homesection4 h2 {
+.homesection4 h2,
+.homesection5 h2 {
     font-weight: 500;
     font-size: 56px;
     line-height: 84px;
@@ -168,7 +176,7 @@ nav ul.dropdown-menu {
 /*Sectio2Home style end*/
 /*Sectio3Home style start*/
 .homesection3 {
-    padding: 90px 22px;
+    padding: 30px 22px;
 }
 
 .homesection3 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -184,14 +192,14 @@ nav ul.dropdown-menu {
 
 /*section4Home style start*/
 .homesection4 {
-    padding: 0px 0px 200px;
+    padding: 0px 0px 40px;
 }
 
 .homesection4 h2 {
 
     color: transparent;
     -webkit-text-stroke: 1px #006090;
-    background: url(../image/6.png);
+    /* background: url(../image/6.png); */
 
     -webkit-background-clip: text;
     background-position: 0 0;
@@ -371,10 +379,14 @@ nav ul.dropdown-menu {
 /*section5Home style start*/
 
 .homesection5 {
+    padding: 60px 0;
+    position: relative;
     background: #f7f8fc;
 }
 
 .homesection5 .row .item {
+    border-radius: 40px;
+    padding: 55px;
     background-color: #f7f8fc;
     box-shadow: -15px -15px 20px rgb(255 255 255 / 80%), 15px 15px 20px rgb(57 65 124 / 8%);
 }
