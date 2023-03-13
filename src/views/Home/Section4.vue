@@ -9,7 +9,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3 col-12 main" style="margin-top: 20px">
+        <div class="col-md-3 col-6 main" style="margin-top: 20px">
           <div class="profile-card">
             <div class="img">
               <img src="/images/img3.jpg" />
@@ -22,7 +22,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-12 main" style="margin-top: 40px">
+        <div class="col-md-3 col-6 main" style="margin-top: 40px">
           <div class="profile-card">
             <div class="img">
               <img src="/images/img3.jpg" />
@@ -35,7 +35,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-12 main" style="margin-top: 40px">
+        <div class="col-md-3 col-6 main" style="margin-top: 40px">
           <div class="profile-card">
             <div class="img">
               <img src="/images/img3.jpg" />
@@ -48,7 +48,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-12 main" style="margin-top: 40px">
+        <div class="col-md-3 col-6 main" style="margin-top: 40px">
           <div class="profile-card">
             <div class="img">
               <img src="/images/img3.jpg" />
@@ -61,15 +61,15 @@
           </div>
         </div>
       </div>
-      <SeeAll/>
+      <SeeAll />
     </div>
   </section>
 </template>
 
 <script>
-import SeeAll from '../SeeAll.vue';
+import SeeAll from "../SeeAll.vue";
 export default {
-    components:{SeeAll}
+  components: { SeeAll },
 };
 </script>
 

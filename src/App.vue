@@ -6,6 +6,9 @@
   </nav> -->
   <router-view />
   <FooterVue />
+  <div class="" style="position: fixed; top: 225px; left: 8px">
+    <a><i class="fa-brands fa-facebook"></i></a>
+  </div>
 </template>
 
 <script>

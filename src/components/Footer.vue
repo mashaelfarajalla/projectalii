@@ -1,8 +1,8 @@
 <template>
   <div id="page-content" class="footer bg-white">
-    <div class="container text-center" style="padding: 100px 55px">
-      <div class="row justify-content-center align-items-baseline">
-        <div class="col-md-3 text-white text-start">
+    <div class="container text-center" style="">
+      <div class="row align-items-baseline">
+        <div class="col-lg-3 text-white text-start">
           <img
             src="../../public/images/logo.png"
             style="width: 280px; height: 65px"
@@ -13,7 +13,11 @@
             Users (Freelancers & Clients)
           </p>
         </div>
-        <div v-for="item in item" :key="item.id" class="col-md-3 text-start">
+        <div
+          v-for="item in item"
+          :key="item.id"
+          class="col-md-auto col-lg-3 text-start"
+        >
           <h5>{{ item.title }}</h5>
           <ul class="p-0 mt-4">
             <li v-for="i in item.children" :key="i.id">{{ i.navbar }}</li>
@@ -22,7 +26,7 @@
             >Viwe All <i class="fa-solid fa-arrow-right-long"></i
           ></a>
         </div>
-        <div class="col-md-3 text-start">
+        <div class="col-md-auto col-lg-3 text-start">
           <h5>Call Us</h5>
           <ul class="p-0 mt-4">
             <li class="mb-3">

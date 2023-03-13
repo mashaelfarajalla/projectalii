@@ -11,6 +11,10 @@
             viverra viverra neque adipiscing arcu, quam dictum. Dui mi viverra
             dui, sit accumsan, tincidunt massa. Dui cras magnis.
           </p>
+          <p class="mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat
+            bibendum ornare urna, cursus eget convallis.
+          </p>
         </div>
         <div class="col-lg-6">
           <div

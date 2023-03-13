@@ -2,9 +2,7 @@
   <nav class="navbar menuSection navbar-expand-lg navbar-light p-0">
     <div class="container bg-white">
       <a class="navbar-brand" href="#"
-        ><img
-          src="../../public/images/logo.png"
-          style="width: 190px; height: 50px"
+        ><img class="logo" src="../../public/images/logo.png" style=""
       /></a>
       <ul class="navbar-nav d-sm-flex flex-row d-lg-none">
         <li class="nav-item dropdown">

@@ -15,8 +15,22 @@
     <div class="row mt-5">
       <swiper
         :modules="modules"
-        :slidesPerView="3"
+        :slidesPerView="1"
         :spaceBetween="20"
+        :breakpoints="{
+          '480': {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          '640': {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          '992': {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        }"
         :loop="true"
         :cssMode="true"
         :navigation="true"

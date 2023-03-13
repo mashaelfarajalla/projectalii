@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2>Services</h2>
+          <h2>Projects</h2>
         </div>
       </div>
       <div
@@ -14,7 +14,7 @@
         <div
           v-for="(item, index) in number"
           :key="index"
-          class="col-auto my-4 mx-4 item"
+          class="col-10 col-md-5 col-lg-auto my-4 mx-4 item"
         >
           <i class="fa-solid fa-gear" style="font-size: 60px"></i>
           <h5 class="mt-5">Easy Deployments</h5>
@@ -22,8 +22,9 @@
         </div>
       </div>
       <img
+        class="imagebackground"
         src="../../../public/images/background-square-03-c58d9440.webp"
-        style="position: absolute; top: 155px; left: -207px; z-index: 0"
+        style=""
       />
       <SeeAll />
     </div>

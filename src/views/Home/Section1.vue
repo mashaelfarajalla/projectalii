@@ -13,13 +13,13 @@
         <div class="row my-4">
           <form class="d-flex justify-content-center">
             <input
-              class="form-control col-10 me-2"
+              class="form-control col-md-10 me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
 
-            <button class="btn btn-outline-success col-2" type="submit">
+            <button class="btn btn-outline-success col-lg-2" type="submit">
               Search
             </button>
           </form>

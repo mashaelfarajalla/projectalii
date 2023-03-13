@@ -80,6 +80,11 @@ nav ul.dropdown-menu {
     nav.navbar div.container {
         margin-top: 40px;
     }
+
+    nav .logo {
+        width: 190px;
+        height: 50px
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -95,11 +100,21 @@ nav ul.dropdown-menu {
         position: absolute;
         left: -30px;
     }
+
+    nav .logo {
+        width: 105px;
+        height: 35px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     nav.navbar div.container {
         margin-top: 30px;
+    }
+
+    nav .logo {
+        width: 190px;
+        height: 50px
     }
 
     form .none {
@@ -143,6 +158,13 @@ nav ul.dropdown-menu {
 
 }
 
+.homesection2 .carousel-indicators button {
+    background-color: #0c52a1;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
 .homesection2 h2,
 .homesection3 h2,
 .homesection4 h2,
@@ -177,6 +199,17 @@ nav ul.dropdown-menu {
 /*Sectio3Home style start*/
 .homesection3 {
     padding: 30px 22px;
+}
+
+.homesection3 .swiper-button-prev,
+.homesection3 .swiper-button-next {
+    padding: 45px 20px;
+    background-color: #0000ff1f;
+}
+
+.homesection3 .swiper-button-next:after,
+.homesection3 .swiper-button-prev:after {
+    font-size: 20px !important;
 }
 
 .homesection3 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -218,6 +251,14 @@ nav ul.dropdown-menu {
 }
 
 @media screen and (min-width: 992px) {
+    .caption h3 {
+        font-size: 21px;
+    }
+
+    .caption p {
+        font-size: 15px;
+
+    }
 
     .profile-card:hover .img {
         transform: translateY(-80px);
@@ -234,6 +275,7 @@ nav ul.dropdown-menu {
     }
 
     .profile-card {
+        margin: 0 25px;
         width: 250px;
         height: 250px;
     }
@@ -247,6 +289,15 @@ nav ul.dropdown-menu {
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .profile-card:hover .img {
         transform: translateY(-60px);
+    }
+
+    .caption h3 {
+        font-size: 21px;
+    }
+
+    .caption p {
+        font-size: 15px;
+
     }
 
     .caption {
@@ -265,13 +316,22 @@ nav ul.dropdown-menu {
 
     .profile-card {
         width: 200px;
-        height: 170px;
+        height: 165px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .homesection4 {
         padding: 0px 0px 150px;
+    }
+
+    .caption h3 {
+        font-size: 20px;
+    }
+
+    .caption p {
+        font-size: 13px;
+
     }
 
     .profile-card:hover .img {
@@ -325,7 +385,6 @@ nav ul.dropdown-menu {
     border-radius: 50%;
     box-shadow: 0 0 22px #3336;
     transition: .6s;
-    margin: 0 25px;
 }
 
 .profile-card:hover {
@@ -364,12 +423,10 @@ nav ul.dropdown-menu {
 }
 
 .caption h3 {
-    font-size: 21px;
     font-family: sans-serif;
 }
 
 .caption p {
-    font-size: 15px;
     color: #0c52a1;
     font-family: sans-serif;
     margin: 2px 0 9px 0;
@@ -391,12 +448,62 @@ nav ul.dropdown-menu {
     box-shadow: -15px -15px 20px rgb(255 255 255 / 80%), 15px 15px 20px rgb(57 65 124 / 8%);
 }
 
+.homesection5 .imagebackground {
+    position: absolute;
+    z-index: 0
+}
+
+@media screen and (min-width: 992px) {
+    .homesection5 .imagebackground {
+        top: 155px;
+        left: -207px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .homesection5 .imagebackground {
+        top: 155px;
+        left: -235px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .homesection5 .imagebackground {
+        top: 155px;
+        left: -207px;
+    }
+}
+
 /*section5Home style end*/
 /*Footer style start*/
+@media screen and (min-width: 992px) {
+    .footer .row {
+        justify-content: center
+    }
+
+    .footer .container {
+        padding: 100px 55px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer .container {
+        padding: 100px 30px
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .footer .row {
+        justify-content: space-between
+    }
+
+    .footer .container {
+        padding: 100px 55px
+    }
+}
+
 #page-content {
     flex: 1 0 auto;
-
-
 }
 
 footer {
