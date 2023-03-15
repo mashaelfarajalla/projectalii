@@ -2,8 +2,10 @@
   <section1Vue />
   <section2Vue />
   <section3Vue />
-  <section4Vue />
   <section5Vue />
+  <section4Vue />
+
+  <FormVue />
 </template>
 
 <script>
@@ -12,6 +14,7 @@ import section2Vue from "./Section2.vue";
 import section3Vue from "./Section3.vue";
 import section4Vue from "./Section4.vue";
 import section5Vue from "./Section5.vue";
+import FormVue from "./Form.vue";
 
 export default {
   components: {
@@ -20,6 +23,7 @@ export default {
     section3Vue,
     section4Vue,
     section5Vue,
+    FormVue,
   },
 };
 </script>

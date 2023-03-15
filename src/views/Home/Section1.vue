@@ -1,5 +1,5 @@
 <template>
-  <div class="container homesection1" style="position: relative">
+  <div class="container homesection1">
     <div class="row justify-content-around">
       <div
         class="col-lg-5 text-start d-flex align-items-center justify-content-center flex-column"
@@ -33,8 +33,8 @@
         style="
           width: 580px;
           position: absolute;
-          top: 44px;
-          left: -230px;
+          top: 140px;
+          right: -225px;
           z-index: -1;
         "
       />

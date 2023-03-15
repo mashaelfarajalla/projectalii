@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar menuSection navbar-expand-lg navbar-light p-0">
-    <div class="container bg-white">
+    <div class="container-fluid bg-white">
       <a class="navbar-brand" href="#"
         ><img class="logo" src="../../public/images/logo.png" style=""
       /></a>
@@ -119,11 +119,11 @@ export default {
   data() {
     return {
       navbars: [
-        { id: 1, navbar: "Home", router: "Home" },
-        { id: 2, navbar: "Projects", router: "Home" },
-        { id: 3, navbar: "FreeLancers", router: "Home" },
-        { id: 4, navbar: "About Us", router: "About" },
-        { id: 4, navbar: "Groups", router: "Home" },
+        { id: 1, navbar: "الرئيسية", router: "Home" },
+        { id: 2, navbar: "المشاريع", router: "Home" },
+        { id: 3, navbar: "المستقلين", router: "Home" },
+        { id: 4, navbar: "من نحن", router: "About" },
+        { id: 5, navbar: "المجموعات", router: "Home" },
       ],
     };
   },

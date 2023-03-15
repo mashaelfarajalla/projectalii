@@ -3,9 +3,10 @@
     <div class="col-12">
       <router-link
         :to="(name = 'About')"
-        class="d-flex align-items-center justify-content-end"
-        ><div class="lineseeall mx-3"></div>
-        See All
+        class="d-flex align-items-center justify-content-end text-white"
+      >
+        رؤية المزيد
+        <div class="lineseeall mx-3"></div>
       </router-link>
     </div>
   </div>

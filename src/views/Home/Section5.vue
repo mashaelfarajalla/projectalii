@@ -3,7 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2>Projects</h2>
+          <h2>مشاريع في كافة المجالات</h2>
+          <p>تصفح المشاريع وأنجز الأعمال المختصة بمهاراتك</p>
         </div>
       </div>
       <div
@@ -43,7 +44,7 @@ export default {
   components: { SeeAll },
   data() {
     return {
-      number: 8,
+      number: 4,
     };
   },
 };

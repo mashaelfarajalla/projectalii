@@ -1,14 +1,13 @@
 <template>
   <div class="container homesection3">
-    <div class="row">
-      <div class="col">
-        <h2 class="mt-5">digital design</h2>
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <h2 class="mt-5">التصميم الرقمي</h2>
         <p class="mt-4">
-          Digital design is any type of design that appears in a digital format
-          on an application or website. It is a type of visual communication
-          that presents information, a product or a service through a digital
-          interface. In simpler terms, digital design is a graphic design
-          designed specifically for use on computers.
+          التصميم الرقمي هو أي نوع من التصميم يظهر في تنسيق رقمي على تطبيق أو
+          موقع ويب. إنه نوع من الاتصال المرئي يقدم معلومات أو منتجًا أو خدمة من
+          خلال رقمي واجهه المستخدم. بعبارات أبسط ، التصميم الرقمي هو تصميم رسومي
+          مصمم خصيصًا للاستخدام على أجهزة الكمبيوتر.
         </p>
       </div>
     </div>

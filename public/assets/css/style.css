@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700&family=Noto+Sans+Arabic&display=swap');
 
 body {
     /* background-color: #F2FAFA; */
     background: #f7f8fc;
-    font-family: 'Poppins';
+    /* font-family: 'Poppins'; */
+    font-size: 16px;
+    font-family: 'Noto Kufi Arabic', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', "sans-serif";
 }
 
 a {
@@ -24,10 +27,13 @@ a:hover .lineseeall {
 }
 
 /*nav style start*/
+.menuSection.fixed-top {
+    box-shadow: 5px 5px 5px #b5b5b5;
+}
 
-nav.navbar div.container {
-    padding: 15px 25px;
-    border-radius: 50px;
+nav.navbar div.container-fluid {
+    padding: 20px 25px;
+    /* border-radius: 50px; */
 }
 
 nav form input.form-control {
@@ -37,12 +43,18 @@ nav form input.form-control {
 
 nav form button.btn-outline-success,
 .homesection1 form button.btn-outline-success {
-    background-color: #1E88E5;
+    /* background-color: #1E88E5;
     border: 0;
     color: white;
     border-radius: 50px;
     width: 160px;
-    ;
+    ; */
+    background-color: #001527;
+    border: 1px solid white;
+    color: white;
+    border-radius: 15px;
+    width: 160px;
+    margin: 0 15px;
 
 
 }
@@ -77,9 +89,7 @@ nav ul.dropdown-menu {
 }
 
 @media screen and (min-width: 992px) {
-    nav.navbar div.container {
-        margin-top: 40px;
-    }
+
 
     nav .logo {
         width: 190px;
@@ -88,9 +98,7 @@ nav ul.dropdown-menu {
 }
 
 @media screen and (max-width: 767px) {
-    nav.navbar div.container {
-        margin-top: 15px;
-    }
+
 
     form .none {
         display: none;
@@ -108,9 +116,7 @@ nav ul.dropdown-menu {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    nav.navbar div.container {
-        margin-top: 30px;
-    }
+
 
     nav .logo {
         width: 190px;
@@ -129,11 +135,39 @@ nav ul.dropdown-menu {
 
 /*nav style end*/
 /*Section1Home style start*/
+@media screen and (min-width: 992px) {
+    .homesection1 {
+        height: 650px;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
+    /* .homesection1 .container {
+        padding-top: 157px;
+    } */
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+
+
+
+.backgroundheader {
+    background-color: #404040cf;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .homesection1 h1 {
     font-weight: 700;
     font-size: 54px;
     line-height: 98px;
     color: #252525;
+    /* color: white; */
 
 }
 
@@ -143,6 +177,7 @@ nav ul.dropdown-menu {
     line-height: 36px;
     color: #252525;
     opacity: 0.6;
+    /* color: white; */
 }
 
 .homesection1 form input.form-control {
@@ -153,52 +188,114 @@ nav ul.dropdown-menu {
 
 
 /*Section2Home style start*/
-.homesection2 {
+/* .homesection2 {
     padding: 60px 0;
 
+} */
+.homesection2 {
+    background-image: url('../../images/image1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    position: relative;
 }
 
-.homesection2 .carousel-indicators button {
-    background-color: #0c52a1;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
+.homesection2 .bagsection2 {
+    background-color: #001527a6;
+    width: 100%;
+    height: 100%;
 }
 
-.homesection2 h2,
-.homesection3 h2,
-.homesection4 h2,
-.homesection5 h2 {
+h2 {
     font-weight: 500;
-    font-size: 56px;
+    font-size: 4vw;
     line-height: 84px;
-    color: #252525;
-    text-transform: capitalize;
+    position: relative;
 }
 
-.homesection2 p,
-.homesection3 p,
-.homesection4 p {
+.homesection2 h2 {
+
+    /* color: #252525; */
+    color: white;
+
+    /* -webkit-text-stroke: .2vw #0c52a1; */
+}
+
+/* 
+.homesection2 h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #9D9D9D;
+    -webkit-text-stroke: 0vw #0c52a1;
+    border-right: 5px solid #9D9D9D;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+} */
+
+p {
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
-    color: #9D9D9D;
     opacity: .9;
+}
+
+.homesection2 p {
+
+    /* color: #9D9D9D; */
+    color: white;
 }
 
 .lineseeall {
     width: 30px;
     height: 2px;
-    background-color: #090909;
+    background-color: white;
     /* background-color: #1E88E5; */
 }
 
+.homesection2 .carousel-indicators {
+    bottom: -25px;
+}
 
+.homesection2 .carousel-indicators button {
+    background-color: white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
 
 /*Sectio2Home style end*/
 /*Sectio3Home style start*/
 .homesection3 {
     padding: 30px 22px;
+}
+
+.homesection3 h2,
+.homesection4 h2,
+.homesection5 h2 {
+    color: #001527cf;
+}
+
+.homesection3 p  {
+    color: #001527a6;
 }
 
 .homesection3 .swiper-button-prev,
@@ -230,14 +327,14 @@ nav ul.dropdown-menu {
 
 .homesection4 h2 {
 
-    color: transparent;
-    -webkit-text-stroke: 1px #006090;
+    /* color: transparent;
+    -webkit-text-stroke: 1px #006090; */
     /* background: url(../image/6.png); */
 
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;
-    font-family: CairoBlack;
+    font-family: CairoBlack; */
 
 
 
@@ -455,8 +552,8 @@ nav ul.dropdown-menu {
 
 @media screen and (min-width: 992px) {
     .homesection5 .imagebackground {
-        top: 155px;
-        left: -207px;
+        top: 94px;
+        right: -117px;
     }
 }
 
@@ -475,6 +572,125 @@ nav ul.dropdown-menu {
 }
 
 /*section5Home style end*/
+
+/*Form style start*/
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+.backgroundcolor {
+    background-color: #333;
+}
+
+/* .bbackgroundcolor2 {
+    background-color: rgb(65, 64, 64);
+} */
+.backgroundcolor h3,
+.backgroundcolor .p {
+    color: white;
+}
+
+.backgroundcolor .card {
+    padding: 30px 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: none !important;
+    background-color: #424242;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+.height {
+    height: 90px;
+}
+
+.form-control-label {
+    margin-bottom: 0
+}
+
+
+
+.backgroundcolor button {
+    padding: 8px 15px;
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+    font-weight: 300;
+    /* background-color: white; */
+}
+
+input,
+textarea {
+    color: white;
+    padding: 8px 15px;
+    background-color: transparent;
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+    font-weight: 300
+}
+
+.form-select {
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+    font-weight: 300;
+    border-radius: 5px !important;
+    padding: 8px 15px;
+    color: white;
+    background-color: transparent;
+}
+
+option {
+    background-color: black;
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #00BCD4;
+    outline-width: 0;
+    font-weight: 400
+}
+
+.btn-block {
+    text-transform: uppercase;
+    font-size: 15px !important;
+    font-weight: 400;
+    height: 48px;
+    cursor: pointer;
+    width: 102px;
+}
+
+.btn-block:hover {
+    color: #fff !important;
+    background-color: black;
+    border: black;
+
+}
+
+.backgroundcolor button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+
+
+
+
+/*Form style end*/
 /*Footer style start*/
 @media screen and (min-width: 992px) {
     .footer .row {

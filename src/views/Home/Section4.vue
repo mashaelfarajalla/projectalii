@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <div class="text-box text-center">
-            <h2>FreeLancer</h2>
+            <h2>المستقلين</h2>
           </div>
         </div>
       </div>

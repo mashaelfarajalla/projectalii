@@ -6,17 +6,15 @@
   </nav> -->
   <router-view />
   <FooterVue />
-  <div class="" style="position: fixed; top: 225px; left: 8px">
-    <a><i class="fa-brands fa-facebook"></i></a>
-  </div>
+  <socialmedai />
 </template>
 
 <script>
 import HeaderVue from "./components/Header.vue";
 import FooterVue from "./components/Footer.vue";
-
+import socialmedai from "./components/socialmedai.vue";
 export default {
-  components: { HeaderVue, FooterVue },
+  components: { HeaderVue, FooterVue, socialmedai },
 };
 </script>
 <style>

@@ -1,100 +1,99 @@
 <template>
-  <div class="bg-white homesection2 my-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 text-start">
-          <h2>About Us</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat
-            bibendum ornare urna, cursus eget convallis. Feugiat imperdiet
-            posuere justo, ultrices interdum sed orci nunc, mattis. Ipsum
-            viverra viverra neque adipiscing arcu, quam dictum. Dui mi viverra
-            dui, sit accumsan, tincidunt massa. Dui cras magnis.
-          </p>
-          <p class="mt-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat
-            bibendum ornare urna, cursus eget convallis.
-          </p>
-        </div>
-        <div class="col-lg-6">
+  <div class="homesection2 my-5">
+    <div class="bagsection2">
+      <div class="container">
+        <div class="row">
           <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-bs-ride="carousel"
+            class="col-lg-6 text-end d-flex flex-column justify-content-center align-items-start"
           >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="../../../public/images/img1.png"
-                  class="img-fluid"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="../../../public/images/img1.png"
-                  class="img-fluid"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="../../../public/images/img1.png"
-                  class="img-fluid"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
+            <h2 data-text="AboutUs">من نحن</h2>
+            <p>
+              خدمات توظيف متكاملة لأصحاب الشركات والمشاريع، بتوفير كادر عمل عن
+              بُعد بأفضل المهارات والكفاءات المطلوبة، ومختلف التخصصات، بدءاً من
+              البحث عن المرشحين المؤهلين مروراً بمراحل التوظيف ووصولاً إلى إنشاء
+              المهام وتسليمها من خلال منصة كفو وتقييم الموظف.
+            </p>
+            <SeeAll />
+          </div>
+          <div class="col-lg-6">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../../../public/images/img1.png"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../../../public/images/img1.png"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../../../public/images/img1.png"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <SeeAll />
     </div>
   </div>
 </template>
