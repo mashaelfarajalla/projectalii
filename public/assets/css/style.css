@@ -294,7 +294,7 @@ p {
     color: #001527cf;
 }
 
-.homesection3 p  {
+.homesection3 p {
     color: #001527a6;
 }
 
@@ -753,3 +753,63 @@ footer {
 }
 
 /*Footer style end*/
+/*About style start*/
+
+.aboutsection1 .accordion-button {
+    background-color: white;
+    height: 65px;
+}
+
+.aboutsection1 .accordion-button.collapsed {
+    background-color: #adc5c8;
+    height: 65px;
+}
+
+.aboutsection1 .collapsed:hover {
+    background-color: #4a757bb8;
+    color: white;
+
+}
+
+.aboutsection1 .accordion-item {
+    background: transparent;
+    margin-bottom: 20px;
+    border: 0px;
+}
+
+
+.aboutsection1 .accordion-body {
+    background-color: white;
+}
+
+
+.aboutsection1 .accordion-button::after {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+
+
+/*About style Ebd*/
+
+
+
+
+/*FreeLancer style start*/
+.freelancer .card {
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 5px #d2d2d2"
+
+}
+
+.freelancer .card-img-top {
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+}
+
+.freelancer a {
+
+    color: #0c52a1;
+}
+
+/*FreeLancer style end*/
