@@ -16,7 +16,11 @@
             <p class="card-text">
               {{ item.department }}
             </p>
-            <a href="#" class="">عرض الملف الشخصي</a>
+            <router-link
+              :to="'/freelancer/freelancerprofile/' + item.id"
+              class=""
+              >عرض الملف الشخصي</router-link
+            >
           </div>
         </div>
       </div>

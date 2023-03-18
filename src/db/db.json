@@ -1,17 +1,176 @@
 {
     "FreeLancer":[
-        {"id":1 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end"},
-        {"id":2 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end"},
-        {"id":3 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end"},
-        {"id":4 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end"},
-        {"id":5 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end"},
-        {"id":6 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end"},
-        {"id":7 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end"},
-        {"id":8 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end"},
-        {"id":9 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end"},
-        {"id":10 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end"},
-        {"id":11 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end"},
-        {"id":12, "image":"/images/img3.jpg","name":"Mashael Farajallah" , "department":"front end"}
+        {"id":1 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,
+         "socialmedai":[
+            {"icon":"fa-brands fa-facebook"},
+            {"icon":"fa-brands fa-twitter"},
+            {"icon":"fa-brands fa-linkedin"}
+
+        ]
+    , "information":[
+        {"icon":"fa-regular fa-envelope", "information":"johndoe@domain.com"},
+        {"icon":"fa-solid fa-phone-flip", "information":"0599384302"},
+        {"icon":"fa-regular fa-calendar-days","information":""}
+
+    ],
+    "biography":" محترف متخصص في تطوير المشروع الجمالي والوظيفي لموقع الويب، والمعروف عمومًا بالمحترف المسؤول عن إنشاء مواقع الويب أو صفحات الإنترنت. ولتطوير مواقع الويب الاحترافية يجب فهم تطبيق الوسائط الإلكترونية للتخصصات مثل: النظرية الأساسية، الطباعة، هندسة المعلومات، السيميائية، قابلية الاستخدام، معرفة هيكلة وتنسيق لغات المستندات فائقة النص مثل (XHTML) لترميز النص التشعبي الموسع اللغة، و(CSS) وهي ورقة الأنماط المتتالية. ولتطبيق المعرفة بشكل عام يذهب مصمم الويب إلى برامج معالجة الصور وتحريرها وتطويرها."
+    },
+        {"id":2 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,       "socialmedai":[
+            {"icon":"fa-brands fa-facebook"},
+            {"icon":"fa-brands fa-twitter"},
+            {"icon":"fa-brands fa-linkedin"}
+
+        ]
+    , "information":[
+        {"icon":"fa-regular fa-envelope", "information":"johndoe@domain.com"},
+        {"icon":"fa-solid fa-phone-flip", "information":"0599384302"},
+        {"icon":"fa-regular fa-calendar-days","information":""}
+
+    ]
+    },
+        {"id":3 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,       "socialmedai":[
+            {"icon":"fa-brands fa-facebook"},
+            {"icon":"fa-brands fa-twitter"},
+            {"icon":"fa-brands fa-linkedin"}
+
+        ]
+    , "information":[
+        {"icon":"fa-regular fa-envelope", "information":"johndoe@domain.com"},
+        {"icon":"fa-solid fa-phone-flip", "information":"0599384302"},
+        {"icon":"fa-regular fa-calendar-days","information":""}
+
+    ]
+    
+    },
+        {"id":4 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end",
+           "socialmedai":[
+            {"icon":"fa-brands fa-facebook"},
+            {"icon":"fa-brands fa-twitter"},
+            {"icon":"fa-brands fa-linkedin"}
+
+        ]
+    , "information":[
+        {"icon":"fa-regular fa-envelope", "information":"johndoe@domain.com"},
+        {"icon":"fa-solid fa-phone-flip", "information":"0599384302"},
+        {"icon":"fa-regular fa-calendar-days","information":""}
+
+    ]
+    
+    },
+        {"id":5 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,
+           "socialmedai":[
+            {"icon":"fa-brands fa-facebook"},
+            {"icon":"fa-brands fa-twitter"},
+            {"icon":"fa-brands fa-linkedin"}
+
+        ]
+    , "information":[
+        {"icon":"fa-regular fa-envelope", "information":"johndoe@domain.com"},
+        {"icon":"fa-solid fa-phone-flip", "information":"0599384302"},
+        {"icon":"fa-regular fa-calendar-days","information":""}
+
+    ]
+    
+    },
+        {"id":6 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end",       "socialmedai":[
+            {"icon":"fa-brands fa-facebook"},
+            {"icon":"fa-brands fa-twitter"},
+            {"icon":"fa-brands fa-linkedin"}
+
+        ]
+    , "information":[
+        {"icon":"fa-regular fa-envelope", "information":"johndoe@domain.com"},
+        {"icon":"fa-solid fa-phone-flip", "information":"0599384302"},
+        {"icon":"fa-regular fa-calendar-days","information":""}
+
+    ]
+    
+    },
+        {"id":7 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,       "socialmedai":[
+            {"icon":"fa-brands fa-facebook"},
+            {"icon":"fa-brands fa-twitter"},
+            {"icon":"fa-brands fa-linkedin"}
+
+        ]
+    , "information":[
+        {"icon":"fa-regular fa-envelope", "information":"johndoe@domain.com"},
+        {"icon":"fa-solid fa-phone-flip", "information":"0599384302"},
+        {"icon":"fa-regular fa-calendar-days","information":""}
+
+    ]
+    },
+        {"id":8 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,       "socialmedai":[
+            {"icon":"fa-brands fa-facebook"},
+            {"icon":"fa-brands fa-twitter"},
+            {"icon":"fa-brands fa-linkedin"}
+
+        ]
+    , "information":[
+        {"icon":"fa-regular fa-envelope", "information":"johndoe@domain.com"},
+        {"icon":"fa-solid fa-phone-flip", "information":"0599384302"},
+        {"icon":"fa-regular fa-calendar-days","information":""}
+
+    ]
+    },
+        {"id":9 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,       "socialmedai":[
+            {"icon":"fa-brands fa-facebook"},
+            {"icon":"fa-brands fa-twitter"},
+            {"icon":"fa-brands fa-linkedin"}
+
+        ]
+    , "information":[
+        {"icon":"fa-regular fa-envelope", "information":"johndoe@domain.com"},
+        {"icon":"fa-solid fa-phone-flip", "information":"0599384302"},
+        {"icon":"fa-regular fa-calendar-days","information":""}
+
+    ]
+    }
+        ,
+        {"id":10 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end",
+           "socialmedai":[
+            {"icon":"fa-brands fa-facebook"},
+            {"icon":"fa-brands fa-twitter"},
+            {"icon":"fa-brands fa-linkedin"}
+
+        ],
+    
+     "information":[
+        {"icon":"fa-regular fa-envelope", "information":"johndoe@domain.com"},
+        {"icon":"fa-solid fa-phone-flip", "information":"0599384302"},
+        {"icon":"fa-regular fa-calendar-days","information":""}
+
+    ]
+    },
+        {"id":11 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end",
+           "socialmedai":[
+            {"icon":"fa-brands fa-facebook"},
+            {"icon":"fa-brands fa-twitter"},
+            {"icon":"fa-brands fa-linkedin"}
+
+        ]
+    , "information":[
+        {"icon":"fa-regular fa-envelope", "information":"johndoe@domain.com"},
+        {"icon":"fa-solid fa-phone-flip", "information":"0599384302"},
+        {"icon":"fa-regular fa-calendar-days","information":""}
+
+    ]
+    
+    },
+        {"id":12, "image":"/images/img3.jpg","name":"Mashael Farajallah" , "department":"front end",
+           "socialmedai":[
+            {"icon":"fa-brands fa-facebook"},
+            {"icon":"fa-brands fa-twitter"},
+            {"icon":"fa-brands fa-linkedin"}
+
+        ]
+    , "information":[
+        {"icon":"fa-regular fa-envelope", "information":"johndoe@domain.com"},
+        {"icon":"fa-solid fa-phone-flip", "information":"0599384302"},
+        {"icon":"fa-regular fa-calendar-days","information":""}
+
+    ]
+    
+    }
 
     ]
 }
