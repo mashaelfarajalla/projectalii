@@ -5,7 +5,7 @@
         <div class="row">
           <div class="card" style="padding: 25px">
             <img :src="freelancer.image" class="card-img-top" alt="..." />
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">{{ freelancer.name }}</h5>
               <p class="card-text">
                 {{ freelancer.department }}
@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="row mt-4">
-          <h3>مواقع التواصل الاجتماعي</h3>
+          <h4>مواقع التواصل الاجتماعي</h4>
           <div class="row justify-content-center">
             <div
               v-for="(i, index) in freelancer.socialmedai"
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="row mt-4">
-          <h3>معلومات عامة</h3>
+          <h4 class="text-center">معلومات عامة</h4>
           <div
             v-for="(i, index) in freelancer.information"
             :key="index"
@@ -88,8 +88,22 @@
             </div>
           </div>
         </div>
-        <div class="row mt-4">
+        <div class="row mt-4 projects">
           <h3>معرض الاعمال</h3>
+          <div class="row mt-2">
+            <div
+              v-for="(item, index) in projects"
+              :key="index"
+              class="col-lg-4 my-3"
+            >
+              <div class="card">
+                <img :src="freelancer.image" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">المشروع الاول</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -102,6 +116,7 @@ export default {
   data() {
     return {
       freelancer: [],
+      projects: 6,
     };
   },
   methods: {

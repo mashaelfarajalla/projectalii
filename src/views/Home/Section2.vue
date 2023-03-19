@@ -46,25 +46,25 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
-                    src="../../../public/images/img1.png"
+                    src="../../../public/images/img4(1).jpg"
                     class="img-fluid"
                     alt="..."
                   />
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="../../../public/images/img1.png"
+                    src="../../../public/images/img4(2).jpg"
                     class="img-fluid"
                     alt="..."
                   />
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                   <img
                     src="../../../public/images/img1.png"
                     class="img-fluid"
                     alt="..."
                   />
-                </div>
+                </div> -->
               </div>
               <button
                 class="carousel-control-prev"

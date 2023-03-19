@@ -33,61 +33,77 @@ a:hover .lineseeall {
 
 nav.navbar div.container-fluid {
     padding: 20px 25px;
-    /* border-radius: 50px; */
 }
 
 nav form input.form-control {
-    /* border: 0; */
     border: 1px solid #ced4da;
     border-radius: 25px !important;
+    outline: none;
+    color: #03114c
 }
 
-input::placeholder {
-    color: #000e3d !important;
-    /* color: red !important; */
+nav form span {
+    color: rgb(177 177 177);
+    ;
+    position: absolute;
+    left: auto;
+    right: 10px;
+    pointer-events: none;
+    padding: 14px 17px;
+    transition: .5s;
+    font-size: 1em;
+
+
+}
+
+nav form input:focus~span {
+    color: #03114c;
+    font-weight: bold;
+    transform: translateX(10px) translateY(-7px);
+    padding: 0 17px;
+    top: 0px;
+    background-color: white;
 }
 
 
-nav form button.btn-outline-success,
-.homesection1 form button.btn-outline-success {
-    /* background-color: #1E88E5;
-    border: 0;
-    color: white;
-    border-radius: 50px;
-    width: 160px;
-    ; */
-    background-color: #001527;
-    border: 1px solid white;
+
+
+nav button.btn-outline-success,
+.homesection1 button.btn-outline-success {
+
+    background-color: #03114c;
+    border: 2px solid white;
+    font-weight: bold;
     color: white;
     border-radius: 15px;
     width: 160px;
     margin: 0 15px;
-
-
 }
 
 .navbar .navbar-nav .nav-link {
-    color: #796d6d !important;
+    color: #796d6d;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.navbar .navbar-nav .router-link-active {
-    color: #1E88E5;
+.navbar .navbar-nav a:hover,
+.navbar .navbar-nav a.router-link-exact-active {
+    color: #1436c8 !important;
 }
 
-nav form button.btn-outline-success:hover,
-.homesection1 form button.btn-outline-success:hover {
+
+nav button.btn-outline-success:hover,
+.homesection1 button.btn-outline-success:hover {
     background-color: white;
-    border: 2px solid #1E88E5;
-    color: #1E88E5;
+    border: 2px solid #03114c;
+    color: #03114c;
     ;
 }
 
 nav i {
     font-size: 20px;
     margin: 0 10px;
-    color: #1E88E5;
+    color: #03114c;
 }
 
 nav ul.dropdown-menu {
@@ -216,7 +232,7 @@ nav ul.dropdown-menu {
 
 h2 {
     font-weight: 500;
-    font-size: 4vw;
+    font-size: 3vw;
     line-height: 84px;
     position: relative;
 }
@@ -303,6 +319,14 @@ p {
 
 .homesection3 p {
     color: #001527a6;
+}
+
+.homesection3 .swiper-button-prev {
+    right: 0px !important;
+}
+
+.homesection3 .swiper-button-next {
+    left: 0px !important;
 }
 
 .homesection3 .swiper-button-prev,
@@ -885,6 +909,15 @@ footer {
 
 }
 
+.freelancerprofile .projects .card {
+    background-color: transparent;
+    border: 0;
+
+}
+
+.freelancerprofile .projects .card .card-img-top {
+    border-radius: 0;
+}
 
 /* .freelancerprofile form input {
     background-color: white;

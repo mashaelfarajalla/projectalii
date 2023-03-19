@@ -11,7 +11,7 @@
       >
         <div class="card">
           <img :src="item.image" class="card-img-top" alt="..." />
-          <div class="card-body">
+          <div class="card-body text-center">
             <h5 class="card-title">{{ item.name }}</h5>
             <p class="card-text">
               {{ item.department }}

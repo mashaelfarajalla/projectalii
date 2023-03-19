@@ -49,9 +49,12 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarSupportedContent"
+      >
         <ul class="navbar-nav me-5 mb-2 mb-lg-0">
-          <li v-for="item in navbars" :key="item.id" class="nav-item">
+          <li v-for="item in navbars" :key="item.id" class="nav-item mx-2">
             <router-link
               :to="{ name: item.router }"
               class="nav-link active"
@@ -61,13 +64,17 @@
             >
           </li>
         </ul>
-        <form class="d-flex align-items-center justify-content-center">
+        <form
+          class="d-flex align-items-center justify-content-center"
+          style="position: relative"
+        >
           <input
             class="form-control me-2"
             type="search"
-            placeholder="البحث عن الوظيفة"
+            placeholder=""
             aria-label="Search"
           />
+          <span>البحث عن الوظيفة</span>
 
           <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
           <!-- <ul class="navbar-nav none">
@@ -109,6 +116,8 @@
             </li>
           </ul> -->
         </form>
+
+        <button class="btn btn-outline-success" type="submit">ابدأ الان</button>
       </div>
     </div>
   </nav>
@@ -124,6 +133,7 @@ export default {
         { id: 3, navbar: "المستقلين", router: "FreeLancer" },
         { id: 4, navbar: "من نحن", router: "About" },
         { id: 5, navbar: "المجموعات", router: "Home" },
+        { id: 6, navbar: "تواصل معنا", router: "Home" },
       ],
     };
   },
