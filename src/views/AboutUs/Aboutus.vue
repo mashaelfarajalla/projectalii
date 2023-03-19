@@ -2,7 +2,7 @@
   <div class="container mt-5 aboutsection1">
     <div class="row">
       <div class="col-6 text-end">
-        <h2>رؤيتنا</h2>
+        <h2>من نحن</h2>
         <p>
           خدمات توظيف متكاملة لأصحاب الشركات والمشاريع، بتوفير كادر عمل عن بُعد
           بأفضل المهارات والكفاءات المطلوبة، ومختلف التخصصات، بدءاً من البحث عن
@@ -59,19 +59,19 @@
       </div>
     </div>
     <div>
-      <div class="row">
-        <div class="col-6 text-end">
-          <h2>اهدافنا</h2>
-          <p>
-            خدمات توظيف متكاملة لأصحاب الشركات والمشاريع، بتوفير كادر عمل عن
-            بُعد بأفضل المهارات والكفاءات المطلوبة، ومختلف التخصصات، بدءاً من
-            البحث عن المرشحين المؤهلين مروراً بمراحل التوظيف ووصولاً إلى إنشاء
-            المهام وتسليمها من خلال منصة كفو وتقييم الموظف.
-          </p>
+      <div class="row mt-5">
+        <div
+          v-for="(item, index) in aboutsection"
+          :key="index"
+          class="col-lg-4 text-end"
+        >
+          <h3>{{ item.title }}</h3>
+          <ul>
+            <li v-for="i in item.child" :key="i.id">{{ i.name }}</li>
+          </ul>
         </div>
-        <div class="col-6"></div>
       </div>
-      <div class="row">
+      <div class="row mt-5">
         <div class="col">
           <h2>أسئلة وأجوبة</h2>
         </div>
@@ -117,9 +117,11 @@
 <script>
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import axios from "axios";
 export default {
   data() {
     return {
+      aboutsection: [],
       Questions: [
         {
           id: 1,
@@ -153,6 +155,11 @@ export default {
         },
       ],
     };
+  },
+  async mounted() {
+    let result = await axios.get("http://localhost:3000/aboutsection");
+    this.aboutsection = result.data[0];
+    console.log(result.data);
   },
 };
 </script>

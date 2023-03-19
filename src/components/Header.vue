@@ -50,7 +50,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-5 mb-2 mb-lg-0">
           <li v-for="item in navbars" :key="item.id" class="nav-item">
             <router-link
               :to="{ name: item.router }"
@@ -65,12 +65,12 @@
           <input
             class="form-control me-2"
             type="search"
-            placeholder="Search"
+            placeholder="البحث عن الوظيفة"
             aria-label="Search"
           />
 
-          <button class="btn btn-outline-success" type="submit">Search</button>
-          <ul class="navbar-nav none">
+          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          <!-- <ul class="navbar-nav none">
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -107,7 +107,7 @@
                 <li><a class="dropdown-item" href="#">Another action</a></li>
               </ul>
             </li>
-          </ul>
+          </ul> -->
         </form>
       </div>
     </div>
