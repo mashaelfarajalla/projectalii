@@ -14,9 +14,20 @@
       class="mt-1"
       v-for="item in SocialContact"
       :key="item.id"
-      style="background: #151719; color: white; padding: 8px"
+      style="
+        display: flex;
+        background: rgb(255 255 255);
+        color: blue;
+        width: 41px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 3px solid #000e7f;
+        height: 41px;
+        box-shadow: 0px 0px 7px 0px #868687;
+      "
     >
-      <i :class="item.icon" style="font-size: 15px"></i
+      <i :class="item.icon" style="font-size: 19px"></i
     ></a>
   </div>
 </template>

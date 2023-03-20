@@ -2,10 +2,10 @@
   <section1Vue />
   <section2Vue />
   <section3Vue />
-  <section5Vue />
+  <!-- <section5Vue />
   <section4Vue />
 
-  <FormVue />
+  <FormVue /> -->
 </template>
 
 <script>

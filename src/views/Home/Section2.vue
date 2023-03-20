@@ -2,20 +2,20 @@
   <div class="homesection2 my-5">
     <div class="bagsection2">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-between">
           <div
-            class="col-lg-6 text-end d-flex flex-column justify-content-center align-items-start"
+            class="col-lg-5 mt-5 text-end d-flex flex-column justify-content-center align-items-start"
           >
             <h2 data-text="AboutUs">من نحن</h2>
-            <p>
+            <p class="mt-3">
               خدمات توظيف متكاملة لأصحاب الشركات والمشاريع، بتوفير كادر عمل عن
               بُعد بأفضل المهارات والكفاءات المطلوبة، ومختلف التخصصات، بدءاً من
               البحث عن المرشحين المؤهلين مروراً بمراحل التوظيف ووصولاً إلى إنشاء
               المهام وتسليمها من خلال منصة كفو وتقييم الموظف.
             </p>
-            <SeeAll />
+            <SeeAll class="d-none d-lg-block" />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 mt-5">
             <div
               id="carouselExampleIndicators"
               class="carousel slide"
@@ -58,13 +58,13 @@
                     alt="..."
                   />
                 </div>
-                <!-- <div class="carousel-item">
+                <div class="carousel-item">
                   <img
-                    src="../../../public/images/img1.png"
+                    src="../../../public/images/img4(2).jpg"
                     class="img-fluid"
                     alt="..."
                   />
-                </div> -->
+                </div>
               </div>
               <button
                 class="carousel-control-prev"
@@ -93,6 +93,7 @@
             </div>
           </div>
         </div>
+        <SeeAll class="d-block d-lg-none" />
       </div>
     </div>
   </div>
@@ -105,4 +106,74 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.homesection2 .row {
+  /* padding: 85px 0px; */
+  padding: 40px 0px;
+}
+.homesection2 .bagsection2 {
+  background-color: #001527a6;
+  width: 100%;
+  height: 100%;
+}
+.homesection2 h2 {
+  color: white;
+  /* -webkit-text-stroke: .2vw #0c52a1; */
+}
+.homesection2 p {
+  color: white;
+}
+
+.homesection2 .carousel-control-next-icon,
+.homesection2 .carousel-control-prev-icon {
+  width: 3rem;
+  background-size: 100% 26%;
+  background-color: #00244ad1;
+}
+
+.homesection2 .lineseeall {
+  background-color: white;
+}
+/* .homesection2 .col-auto a:hover {
+  color: black !important;
+}
+
+.homesection2 .col-auto a:hover .lineseeall {
+  background-color: rgb(0, 0, 0) !important;
+} */
+.homesection2 .col-auto a {
+  color: white;
+}
+
+.homesection2 .carousel-indicators {
+  bottom: -70px;
+}
+
+.homesection2 .carousel-indicators button {
+  background-color: white;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+@media screen and (min-width: 992px) {
+  .homesection2 .carousel-control-next-icon,
+  .homesection2 .carousel-control-prev-icon {
+    height: 9rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .homesection2 .carousel-control-next-icon,
+  .homesection2 .carousel-control-prev-icon {
+    height: 6rem;
+  }
+  .homesection2 .row {
+    padding: 40px 15px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .homesection2 .carousel-control-next-icon,
+  .homesection2 .carousel-control-prev-icon {
+    height: 9rem;
+  }
+}
+</style>

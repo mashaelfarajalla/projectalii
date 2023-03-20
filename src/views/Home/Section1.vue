@@ -1,7 +1,7 @@
 <template>
   <div class="homesection1">
     <div class="container">
-      <div class="row justify-content-around">
+      <div class="row justify-content-between">
         <div
           class="col-lg-5 text-start d-flex align-items-center justify-content-center flex-column"
         >
