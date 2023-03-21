@@ -13,7 +13,7 @@
               البحث عن المرشحين المؤهلين مروراً بمراحل التوظيف ووصولاً إلى إنشاء
               المهام وتسليمها من خلال منصة كفو وتقييم الموظف.
             </p>
-            <SeeAll class="d-none d-lg-block" />
+            <SeeAll routername="About" class="d-none d-lg-block" />
           </div>
           <div class="col-lg-6 mt-5">
             <div
@@ -93,7 +93,7 @@
             </div>
           </div>
         </div>
-        <SeeAll class="d-block d-lg-none" />
+        <SeeAll routername="About" class="d-block d-lg-none" />
       </div>
     </div>
   </div>

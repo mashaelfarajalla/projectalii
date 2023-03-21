@@ -1,6 +1,11 @@
 <template>
   <div class="container freelancerprofile mt-5">
-    <div class="row">
+    <div class="row" style="position: relative">
+      <router-link
+        :to="'/freelancer/'"
+        class="btn-close"
+        style="position: absolute; top: 0; right: -65px"
+      ></router-link>
       <div class="col-lg-3">
         <div class="row">
           <div class="card" style="padding: 25px">
@@ -94,7 +99,8 @@
             <div
               v-for="(item, index) in projects"
               :key="index"
-              class="col-lg-4 my-3"
+              class="col-lg-3 my-3"
+              style="cursor: pointer"
             >
               <div class="card">
                 <img :src="freelancer.image" class="card-img-top" alt="..." />

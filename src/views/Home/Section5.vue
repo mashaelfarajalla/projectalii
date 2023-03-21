@@ -1,17 +1,15 @@
 <template>
   <div class="homesection5">
     <div class="container">
-      <div class="row">
-        <div class="col">
+      <div class="row justify-content-center">
+        <div class="col-auto">
           <h2>مشاريع في كافة المجالات</h2>
-          <p>تصفح المشاريع وأنجز الأعمال المختصة بمهاراتك</p>
+          <p class="text-center">
+            تصفح المشاريع وأنجز الأعمال المختصة بمهاراتك
+          </p>
         </div>
       </div>
-      <div
-        class="row masonry"
-        data-masonry='{"percentPosition":true}'
-        style="position: relative; z-index: 1"
-      >
+      <div class="row" style="position: relative; z-index: 1">
         <div
           v-for="(item, index) in number"
           :key="index"
@@ -33,14 +31,8 @@
 </template>
 
 <script>
-import Masonry from "masonry-layout";
 import SeeAll from "../SeeAll.vue";
 export default {
-  async mounted() {
-    setTimeout(function () {
-      new Masonry(".masonry");
-    }, 1000);
-  },
   components: { SeeAll },
   data() {
     return {

@@ -58,55 +58,56 @@
         </div>
       </div>
     </div>
-    <div>
-      <div class="row mt-5">
+    <div class="row mt-5">
+      <div
+        v-for="(item, index) in aboutsection"
+        :key="index"
+        class="col-lg-4 text-end"
+      >
+        <h3>{{ item.title }}</h3>
+        <ul>
+          <li v-for="i in item.child" :key="i.id">{{ i.name }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <section6Vue />
+  <div class="container aboutsection1 my-5">
+    <div class="row">
+      <div class="col">
+        <h2>أسئلة وأجوبة</h2>
+      </div>
+    </div>
+    <div class="row text-end">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
         <div
-          v-for="(item, index) in aboutsection"
+          v-for="(item, index) in Questions"
           :key="index"
-          class="col-lg-4 text-end"
+          class="accordion-item"
         >
-          <h3>{{ item.title }}</h3>
-          <ul>
-            <li v-for="i in item.child" :key="i.id">{{ i.name }}</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col">
-          <h2>أسئلة وأجوبة</h2>
-        </div>
-      </div>
-      <div class="row text-end">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div
-            v-for="(item, index) in Questions"
-            :key="index"
-            class="accordion-item"
-          >
-            <h2 class="accordion-header" :id="item.id">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                :data-bs-target="'#' + item.target"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
-              >
-                <img
-                  src="../../../public/images/question-mark-5838.png"
-                  style="width: 20px; height: 20px; margin: 0 10px"
-                />
-                {{ item.question }}
-              </button>
-            </h2>
-            <div
-              :id="item.target"
-              class="accordion-collapse collapse"
-              :aria-labelledby="item.id"
-              data-bs-parent="#accordionFlushExample"
+          <h2 class="accordion-header" :id="item.id">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              :data-bs-target="'#' + item.target"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
             >
-              <div class="accordion-body">{{ item.answer }}</div>
-            </div>
+              <img
+                src="../../../public/images/question-mark-5838.png"
+                style="width: 20px; height: 20px; margin: 0 10px"
+              />
+              {{ item.question }}
+            </button>
+          </h2>
+          <div
+            :id="item.target"
+            class="accordion-collapse collapse"
+            :aria-labelledby="item.id"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">{{ item.answer }}</div>
           </div>
         </div>
       </div>
@@ -117,6 +118,7 @@
 <script>
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import section6Vue from "@/views/Home/Section6.vue";
 import axios from "axios";
 export default {
   data() {
@@ -156,6 +158,7 @@ export default {
       ],
     };
   },
+  components: { section6Vue },
   async mounted() {
     let result = await axios.get("http://localhost:3000/aboutsection");
     this.aboutsection = result.data[0];
@@ -164,4 +167,51 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.aboutsection1 .row ul {
+  height: 255px;
+  background: #adc5c8;
+  padding: 44px;
+  /* box-shadow: 6px 24px 25px 5px rgb(135 135 135 / 20%); */
+  box-shadow: 5px 23px 24px rgb(183 187 192 / 40%);
+}
+
+.aboutsection1 .row ul li {
+  list-style-type: none;
+}
+
+.aboutsection1 .accordion-button {
+  background-color: white;
+  height: 65px;
+}
+
+.aboutsection1 .accordion-button:focus {
+  border-color: transparent;
+  box-shadow: inset 0 0px 0 transparent;
+}
+
+.aboutsection1 .accordion-button.collapsed {
+  background-color: #adc5c8;
+  height: 65px;
+}
+
+.aboutsection1 .collapsed:hover {
+  background-color: #4a757bb8;
+  color: white;
+}
+
+.aboutsection1 .accordion-item {
+  background: transparent;
+  margin-bottom: 20px;
+  border: 0px;
+}
+
+.aboutsection1 .accordion-body {
+  background-color: white;
+}
+
+.aboutsection1 .accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
+}
+</style>

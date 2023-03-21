@@ -3,7 +3,7 @@ import Home from "@/views/Home/Home.vue";
 import About from "@/views/AboutUs/Aboutus.vue";
 import FreeLancer from "@/views/FreeLancer/FreeLancer.vue";
 import FreeLancerProfile from "@/views/FreeLancer/FreeLancerProfile.vue";
-
+import CountactUs from "@/views/Countactus/Countactus.vue";
 
 const routes = [
   {
@@ -25,6 +25,11 @@ const routes = [
     path: "/freelancer/freelancerprofile/:id",
     name: "FreeLancerProfile",
     component: FreeLancerProfile,
+  },
+  {
+    path: "/countactus",
+    name: "CountactUs",
+    component: CountactUs,
   },
 ];
 

@@ -13,7 +13,7 @@
 
 
     "FreeLancer":[
-        {"id":1 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,
+        {"id":1 ,"image":"/images/img3.jpg", "name":"مشاعل فرج الله" , "department":"مطور الواجهات الامامية" ,
          "socialmedai":[
             {"icon":"fa-brands fa-facebook"},
             {"icon":"fa-brands fa-twitter"},
@@ -28,7 +28,7 @@
     ],
     "biography":" محترف متخصص في تطوير المشروع الجمالي والوظيفي لموقع الويب، والمعروف عمومًا بالمحترف المسؤول عن إنشاء مواقع الويب أو صفحات الإنترنت. ولتطوير مواقع الويب الاحترافية يجب فهم تطبيق الوسائط الإلكترونية للتخصصات مثل: النظرية الأساسية، الطباعة، هندسة المعلومات، السيميائية، قابلية الاستخدام، معرفة هيكلة وتنسيق لغات المستندات فائقة النص مثل (XHTML) لترميز النص التشعبي الموسع اللغة، و(CSS) وهي ورقة الأنماط المتتالية. ولتطبيق المعرفة بشكل عام يذهب مصمم الويب إلى برامج معالجة الصور وتحريرها وتطويرها."
     },
-        {"id":2 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,       "socialmedai":[
+        {"id":2 ,"image":"/images/img3.jpg", "name":"مشاعل فرج الله" , "department":"مطور الواجهات الامامية"  ,       "socialmedai":[
             {"icon":"fa-brands fa-facebook"},
             {"icon":"fa-brands fa-twitter"},
             {"icon":"fa-brands fa-linkedin"}
@@ -41,7 +41,7 @@
 
     ]
     },
-        {"id":3 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,       "socialmedai":[
+        {"id":3 ,"image":"/images/img3.jpg", "name":"مشاعل فرج الله" , "department":"مطور الواجهات الامامية"  ,       "socialmedai":[
             {"icon":"fa-brands fa-facebook"},
             {"icon":"fa-brands fa-twitter"},
             {"icon":"fa-brands fa-linkedin"}
@@ -55,7 +55,7 @@
     ]
     
     },
-        {"id":4 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end",
+        {"id":4 ,"image":"/images/img3.jpg", "name":"مشاعل فرج الله" , "department":"مطور الواجهات الامامية" ,
            "socialmedai":[
             {"icon":"fa-brands fa-facebook"},
             {"icon":"fa-brands fa-twitter"},
@@ -70,7 +70,7 @@
     ]
     
     },
-        {"id":5 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,
+        {"id":5 ,"image":"/images/img3.jpg", "name":"مشاعل فرج الله" , "department":"مطور الواجهات الامامية"  ,
            "socialmedai":[
             {"icon":"fa-brands fa-facebook"},
             {"icon":"fa-brands fa-twitter"},
@@ -85,7 +85,7 @@
     ]
     
     },
-        {"id":6 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end",       "socialmedai":[
+        {"id":6 ,"image":"/images/img3.jpg", "name":"مشاعل فرج الله" , "department":"مطور الواجهات الامامية" ,       "socialmedai":[
             {"icon":"fa-brands fa-facebook"},
             {"icon":"fa-brands fa-twitter"},
             {"icon":"fa-brands fa-linkedin"}
@@ -99,7 +99,7 @@
     ]
     
     },
-        {"id":7 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,       "socialmedai":[
+        {"id":7 ,"image":"/images/img3.jpg", "name":"مشاعل فرج الله" , "department":"مطور الواجهات الامامية"  ,       "socialmedai":[
             {"icon":"fa-brands fa-facebook"},
             {"icon":"fa-brands fa-twitter"},
             {"icon":"fa-brands fa-linkedin"}
@@ -112,7 +112,7 @@
 
     ]
     },
-        {"id":8 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,       "socialmedai":[
+        {"id":8 ,"image":"/images/img3.jpg", "name":"مشاعل فرج الله" , "department":"مطور الواجهات الامامية"  ,       "socialmedai":[
             {"icon":"fa-brands fa-facebook"},
             {"icon":"fa-brands fa-twitter"},
             {"icon":"fa-brands fa-linkedin"}
@@ -125,7 +125,7 @@
 
     ]
     },
-        {"id":9 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end" ,       "socialmedai":[
+        {"id":9 ,"image":"/images/img3.jpg", "name":"مشاعل فرج الله" , "department":"مطور الواجهات الامامية"  ,       "socialmedai":[
             {"icon":"fa-brands fa-facebook"},
             {"icon":"fa-brands fa-twitter"},
             {"icon":"fa-brands fa-linkedin"}
@@ -139,7 +139,7 @@
     ]
     }
         ,
-        {"id":10 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end",
+        {"id":10 ,"image":"/images/img3.jpg", "name":"مشاعل فرج الله" , "department":"مطور الواجهات الامامية" ,
            "socialmedai":[
             {"icon":"fa-brands fa-facebook"},
             {"icon":"fa-brands fa-twitter"},
@@ -154,7 +154,7 @@
 
     ]
     },
-        {"id":11 ,"image":"/images/img3.jpg", "name":"Mashael Farajallah" , "department":"front end",
+        {"id":11 ,"image":"/images/img3.jpg", "name":"مشاعل فرج الله" , "department":"مطور الواجهات الامامية" ,
            "socialmedai":[
             {"icon":"fa-brands fa-facebook"},
             {"icon":"fa-brands fa-twitter"},
@@ -169,7 +169,7 @@
     ]
     
     },
-        {"id":12, "image":"/images/img3.jpg","name":"Mashael Farajallah" , "department":"front end",
+        {"id":12, "image":"/images/img3.jpg","name":"مشاعل فرج الله" , "department":"مطور الواجهات الامامية" ,
            "socialmedai":[
             {"icon":"fa-brands fa-facebook"},
             {"icon":"fa-brands fa-twitter"},
@@ -202,6 +202,30 @@
 
         ]}
         }
+    ], 
+    "Services":[{
+        "Implementationofblueprints":{
+           "id":1,"images":"/images/image1.png","active":"active", "title":"تنفيذ المخططات", "services":[
+                {"servicename":"نمذجة التصاميم"},
+                {"servicename":"نشاء مخطط "},
+                {"servicename":"تنفيذ تصميم "}
+
+            ]
+        },
+        "Constructionworksandmaintenanceservices":{
+           "id":2,"images":"/images/iamge2.png", "title":"اعمال انشاءية،وخدامات صيانة", "services":[
+                   {"servicename":"اعمال انشاءية"},
+                {"servicename":"وخدامات صيانة"}
+            ]
+        },
+        "Design":{
+           "id":3, "images":"/images/iamge3.png", "title":"التصميم ", "services":[
+                {"servicename":"تصميم جرافك"},
+                {"servicename":"تصميم ثلاثي الابعاد "}
+            ]
+        }
+    
+    }
     ]
 
 }

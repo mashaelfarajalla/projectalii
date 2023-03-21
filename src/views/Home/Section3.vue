@@ -3,7 +3,7 @@
     <div class="row justify-content-center text-center">
       <div class="col-10">
         <h2 class="mt-5">التصميم الرقمي</h2>
-        <p class="mt-4">
+        <p class="mt-4 text-center">
           التصميم الرقمي هو أي نوع من التصميم يظهر في تنسيق رقمي على تطبيق أو
           موقع ويب. إنه نوع من الاتصال المرئي يقدم معلومات أو منتجًا أو خدمة من
           خلال رقمي واجهه المستخدم. بعبارات أبسط ، التصميم الرقمي هو تصميم رسومي
@@ -46,7 +46,9 @@
               <p class="card-text">
                 {{ item.details }}
               </p>
-              <a href="#" class="hvr-icon-wobble-horizontal"
+              <a
+                href="#"
+                class="hvr-icon-wobble-horizontal d-flex align-items-center justify-content-start"
                 >قراءة المزيد <i class="fa-solid fa-arrow-left-long mx-2"></i>
               </a>
             </div></div
@@ -94,4 +96,55 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.homesection3 {
+  padding: 30px 22px;
+}
+
+.homesection3 h2,
+.homesection4 h2,
+.homesection5 h2 {
+  color: #001527cf;
+}
+
+.homesection3 p {
+  color: #001527a6;
+}
+
+.homesection3 .swiper-button-prev {
+  right: 0px !important;
+}
+
+.homesection3 .swiper-button-next {
+  left: 0px !important;
+}
+
+.homesection3 .swiper-button-prev,
+.homesection3 .swiper-button-next {
+  padding: 45px 20px;
+  /* background-color: #0000ff1f; */
+  background-color: #dfdfffbd;
+  color: #02023e;
+}
+.homesection3 .swiper-button-prev:hover,
+.homesection3 .swiper-button-next:hover {
+  color: white;
+  background-color: #000000;
+}
+
+.homesection3 .swiper-button-next:after,
+.homesection3 .swiper-button-prev:after {
+  font-size: 20px !important;
+}
+.homesection3
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: none;
+}
+
+.homesection3 .card {
+  padding: 15px;
+}
+.homesection3 .card p {
+  font-size: 17px;
+}
+</style>

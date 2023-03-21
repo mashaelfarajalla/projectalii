@@ -2,10 +2,9 @@
   <div class="row mt-5 seeall">
     <div class="col-auto">
       <router-link
-        :to="(name = 'About')"
+        :to="(name = `${routername}`)"
         class="d-flex align-items-center justify-content-end"
-      >
-        رؤية المزيد
+        >رؤية المزيد
         <div class="lineseeall mx-3"></div>
       </router-link>
     </div>
@@ -13,7 +12,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["routername"],
+};
 </script>
 
 <style>

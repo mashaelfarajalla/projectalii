@@ -133,7 +133,7 @@ export default {
         { id: 3, navbar: "المستقلين", router: "FreeLancer" },
         { id: 4, navbar: "من نحن", router: "About" },
         { id: 5, navbar: "المجموعات", router: "Home" },
-        { id: 6, navbar: "تواصل معنا", router: "Home" },
+        { id: 6, navbar: "تواصل معنا", router: "CountactUs" },
       ],
     };
   },
