@@ -25,8 +25,8 @@
         </div>
       </div>
     </div>
-    <startNow />
   </div>
+  <startNow class="mt-5" />
 </template>
 
 <script>

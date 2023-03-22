@@ -154,7 +154,13 @@ nav form input.form-control {
   outline: none;
   color: #03114c;
 }
-
+nav form input.form-control:focus {
+  outline-width: 0;
+  outline: none;
+}
+[type="search"] {
+  outline-offset: 0px;
+}
 nav form span {
   color: rgb(177 177 177);
   position: absolute;
@@ -171,7 +177,7 @@ nav form input:focus ~ span {
   font-weight: bold;
   transform: translateX(10px) translateY(-7px);
   padding: 0 17px;
-  top: 0px;
+  top: -10px;
   right: 35px;
   background-color: white;
 }
