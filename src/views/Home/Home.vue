@@ -7,6 +7,7 @@
 
   <FormVue /> -->
   <section6Vue />
+  <StartNow />
   <section5Vue />
   <section4Vue />
 </template>
@@ -18,6 +19,7 @@ import section3Vue from "./Section3.vue";
 import section4Vue from "./Section4.vue";
 import section5Vue from "./Section5.vue";
 import section6Vue from "./Section6.vue";
+import StartNow from "../StartNow.vue";
 
 import FormVue from "./Form.vue";
 
@@ -30,6 +32,7 @@ export default {
     section5Vue,
     section6Vue,
     FormVue,
+    StartNow,
   },
 };
 </script>

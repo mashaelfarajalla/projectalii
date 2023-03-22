@@ -72,6 +72,7 @@
     </div>
   </div>
   <section6Vue />
+  <StartNow />
   <div class="container aboutsection1 my-5">
     <div class="row">
       <div class="col">
@@ -120,6 +121,7 @@ import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import section6Vue from "@/views/Home/Section6.vue";
 import axios from "axios";
+import StartNow from "../StartNow.vue";
 export default {
   data() {
     return {
@@ -158,7 +160,7 @@ export default {
       ],
     };
   },
-  components: { section6Vue },
+  components: { section6Vue, StartNow },
   async mounted() {
     let result = await axios.get("http://localhost:3000/aboutsection");
     this.aboutsection = result.data[0];
