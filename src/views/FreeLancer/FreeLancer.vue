@@ -25,17 +25,20 @@
         </div>
       </div>
     </div>
+    <startNow />
   </div>
 </template>
 
 <script>
 import axios from "axios";
+import StartNow from "../StartNow.vue";
 export default {
   data() {
     return {
       freelancer: [],
     };
   },
+  components: { StartNow },
   async mounted() {
     let result = await axios.get("http://localhost:3000/FreeLancer");
     this.freelancer = result.data;

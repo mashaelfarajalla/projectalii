@@ -4,14 +4,14 @@
     style="
       position: fixed;
       top: 225px;
-      left: 0px;
+      left: 22px;
       display: flex;
       flex-direction: column;
     "
   >
     <a
       href="#"
-      class="mt-1"
+      class="mt-2"
       v-for="item in SocialContact"
       :key="item.id"
       style="
@@ -22,7 +22,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        border: 3px solid #000e7f;
+        /* border: 3px solid #000e7f; */
         height: 41px;
         box-shadow: 0px 0px 7px 0px #868687;
       "
