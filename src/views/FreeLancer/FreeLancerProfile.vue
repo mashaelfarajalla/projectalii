@@ -83,12 +83,15 @@
           </form>
           <div class="row items mt-2">
             <div class="col-auto item">
+              <i class="fa-solid fa-tag"></i>
               HTML <span><i class="fa-solid fa-trash"></i></span>
             </div>
             <div class="col-auto item">
+              <i class="fa-solid fa-tag"></i>
               JavaScript <span><i class="fa-solid fa-trash"></i></span>
             </div>
             <div class="col-auto item">
+              <i class="fa-solid fa-tag"></i>
               Css <span><i class="fa-solid fa-trash"></i></span>
             </div>
           </div>

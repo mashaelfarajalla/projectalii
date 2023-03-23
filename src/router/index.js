@@ -5,6 +5,7 @@ import FreeLancer from "@/views/FreeLancer/FreeLancer.vue";
 import FreeLancerProfile from "@/views/FreeLancer/FreeLancerProfile.vue";
 import CountactUs from "@/views/Countactus/CountactUs.vue";
 import Projects from "@/views/Projects/Projects.vue";
+import Projectdetails from "@/views/Projects/Projectdetails.vue";
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/projects",
     name: "Projects",
     component: Projects,
+  },
+  {
+    path: "/projects/:id",
+    name: "Projectdetails",
+    component: Projectdetails,
   },
 ];
 

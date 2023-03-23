@@ -69,8 +69,7 @@ export default {
   box-shadow: -15px -15px 20px rgb(255 255 255 / 80%),
     15px 15px 20px rgb(57 65 124 / 8%);
 }
-/* .homesection5 .row .item .text {
-}*/
+
 .homesection5 .row .item:hover .overlay {
   opacity: 85%;
   cursor: pointer;
@@ -89,7 +88,7 @@ export default {
   background-color: #000949;
   border-radius: 40px;
 }
-.text {
+.homesection5 .text {
   /* color: #fdfdfd; */
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
