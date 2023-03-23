@@ -9,15 +9,27 @@
           </p>
         </div>
       </div>
-      <div class="row" style="position: relative; z-index: 1">
+      <div
+        class="row justify-content-center"
+        style="position: relative; z-index: 1"
+      >
         <div
           v-for="(item, index) in number"
           :key="index"
-          class="col-10 col-md-5 col-lg-auto my-4 mx-4 item"
+          class="col-10 col-md-5 col-lg-auto mx-3 item"
         >
-          <i class="fa-solid fa-gear" style="font-size: 60px"></i>
-          <h5 class="mt-5">Easy Deployments</h5>
-          <a href="#" class="mt-5">Learn More</a>
+          <img
+            src="../../../public/images/11331m.png"
+            class=""
+            style="max-width: 250px"
+          />
+          <!-- <i class="fa-solid fa-gear" style="font-size: 60px"></i> -->
+          <div class="overlay">
+            <div class="text text-white">
+              <h5 class="mt-5">Easy Deployments</h5>
+              <a href="#" class="mt-5">قراءة المزيد</a>
+            </div>
+          </div>
         </div>
       </div>
       <img
@@ -25,7 +37,7 @@
         src="../../../public/images/background-square-03-c58d9440.webp"
         style=""
       />
-      <SeeAll />
+      <SeeAll routername="Projects" style="position: relative; z-index: 1" />
     </div>
   </div>
 </template>
@@ -36,10 +48,80 @@ export default {
   components: { SeeAll },
   data() {
     return {
-      number: 4,
+      number: 3,
     };
   },
 };
 </script>
 
-<style></style>
+<style>
+.homesection5 {
+  padding: 60px 0;
+  position: relative;
+  background: #f7f8fc;
+}
+
+.homesection5 .row .item {
+  position: relative;
+  border-radius: 40px;
+  padding: 55px;
+  background-color: #f7f8fc;
+  box-shadow: -15px -15px 20px rgb(255 255 255 / 80%),
+    15px 15px 20px rgb(57 65 124 / 8%);
+}
+/* .homesection5 .row .item .text {
+}*/
+.homesection5 .row .item:hover .overlay {
+  opacity: 85%;
+  cursor: pointer;
+}
+
+.homesection5 .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000949;
+  border-radius: 40px;
+}
+.text {
+  /* color: #fdfdfd; */
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  top: 50%;
+}
+
+.homesection5 .imagebackground {
+  position: absolute;
+  z-index: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .homesection5 .imagebackground {
+    top: 94px;
+    right: -117px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homesection5 .imagebackground {
+    top: 155px;
+    left: -235px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .homesection5 .imagebackground {
+    top: 155px;
+    left: -207px;
+  }
+}
+</style>

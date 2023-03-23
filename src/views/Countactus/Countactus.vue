@@ -1,14 +1,25 @@
 <template>
   <div class="px-1 py-5 mx-auto mt-5 backgroundcolor" style="">
-    <div class="container">
+    <div class="container" style="position: relative">
       <div class="row">
-        <h1>
+        <div class="col">
+          <h1>كن على تواصل معنا</h1>
+        </div>
+        <div
+          class="col-2"
+          style="
+            position: absolute;
+            /* text-align: end; */
+            /* margin-top: 110px; */
+            top: 13%;
+            left: 5%;
+          "
+        >
           <i
             class="fa-solid fa-location-dot fa-flip fa-2xl mx-2"
-            style="color: #040e3e; font-size: 100px"
+            style="color: #040e3e; font-size: 280px"
           ></i>
-          كن على تواصل معنا
-        </h1>
+        </div>
       </div>
       <div class="row mt-5 justify-content-center">
         <div class="col-auto">

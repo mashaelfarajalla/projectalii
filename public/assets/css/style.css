@@ -479,44 +479,6 @@ nav ul.dropdown-menu {
 /*section4Home style end*/
 /*section5Home style start*/
 
-.homesection5 {
-    padding: 60px 0;
-    position: relative;
-    background: #f7f8fc;
-}
-
-.homesection5 .row .item {
-    border-radius: 40px;
-    padding: 55px;
-    background-color: #f7f8fc;
-    box-shadow: -15px -15px 20px rgb(255 255 255 / 80%), 15px 15px 20px rgb(57 65 124 / 8%);
-}
-
-.homesection5 .imagebackground {
-    position: absolute;
-    z-index: 0
-}
-
-@media screen and (min-width: 992px) {
-    .homesection5 .imagebackground {
-        top: 94px;
-        right: -117px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .homesection5 .imagebackground {
-        top: 155px;
-        left: -235px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .homesection5 .imagebackground {
-        top: 155px;
-        left: -207px;
-    }
-}
 
 /*section5Home style end*/
 

@@ -4,6 +4,7 @@ import About from "@/views/AboutUs/Aboutus.vue";
 import FreeLancer from "@/views/FreeLancer/FreeLancer.vue";
 import FreeLancerProfile from "@/views/FreeLancer/FreeLancerProfile.vue";
 import CountactUs from "@/views/Countactus/CountactUs.vue";
+import Projects from "@/views/Projects/Projects.vue";
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: "/countactus",
     name: "CountactUs",
     component: CountactUs,
+  },
+  {
+    path: "/projects",
+    name: "Projects",
+    component: Projects,
   },
 ];
 
