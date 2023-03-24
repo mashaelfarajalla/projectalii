@@ -3,13 +3,88 @@
     <div class="row">
       <h2>المشاريع</h2>
 
-      <ul class="text-center">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            Home
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            Profile
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            Contact
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+        >
+          Home
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+        >
+          profile
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-contact"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+        >
+          ...contact
+        </div>
+      </div>
+
+      <!-- <ul class="text-center">
+        <li class="d-inline" data-class="all">
+          <a href="#all">all</a>
+        </li>
         <li
-          v-for="i in items"
-          :key="i.id"
+          v-for="(i, index) in items"
+          :key="index"
           class="d-inline"
-          :class="i.active"
+          :class="items.active"
           :data-class="i.dot + i.href"
+          @click="dataitem(index)"
         >
           <a :href="'#' + i.href">{{ i.title }}</a>
         </li>
@@ -18,16 +93,12 @@
         <div class="shuffle-images">
           <div class="row">
             <div
-              v-for="(item, index) in items"
+              v-for="(i, index) in project.children"
               :key="index"
               class="col-6 col-md-3 p-0 position"
-              :class="item.href"
+              :class="project.href"
             >
-              <div
-                v-for="(i, index) in item.children"
-                :key="index"
-                class="port"
-              >
+              <div class="port">
                 <img :src="i.image" class="img-fluid" />
                 <div class="overlay">
                   <div class="text text1">
@@ -40,7 +111,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -140,9 +211,16 @@ export default {
           ],
         },
       ],
+      project: [],
     };
   },
+  methods: {
+    dataitem(id) {
+      this.project = this.items[id];
+    },
+  },
   mounted() {
+    this.dataitem(0);
     // Start portfolio
 
     $(".projectpage ul li").on("click", function () {
@@ -157,22 +235,11 @@ export default {
     });
 
     // End portfolio
-
-    $(".portfolio.port").hover(
-      function () {
-        $(this).children(".overlay").fadeIn();
-      },
-      function () {
-        $(this).children(".overlay").fadeOut();
-      }
-    );
   },
 };
 </script>
 
 <style>
-.projectpage ul {
-}
 .projectpage ul li {
   margin: 0px 5px;
   font-size: 21px;
