@@ -29,7 +29,7 @@ html {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
   color: #03114c;
   font-size: 35px;
   display: flex;

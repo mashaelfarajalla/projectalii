@@ -7,6 +7,7 @@
       left: 22px;
       display: flex;
       flex-direction: column;
+      z-index: 1;
     "
   >
     <a

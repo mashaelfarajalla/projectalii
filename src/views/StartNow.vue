@@ -5,11 +5,11 @@
   >
     <div class="container">
       <div class="row justify-content-center align-items-center">
-        <div class="col-4">
+        <div class="col-lg-4">
           <h4>تصفح المشاريع</h4>
           <p>ابدأ الان لرؤية المزيد من الخدمات</p>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <button class="btn btn-outline-success" type="submit">
             ابدأ الان
           </button>
@@ -24,9 +24,24 @@ export default {};
 </script>
 
 <style>
-.startnow .container {
-  padding: 132px 108px;
+@media screen and (min-width: 992px) {
+  .startnow .container {
+    padding: 132px 108px;
+  }
 }
+
+@media screen and (max-width: 767px) {
+  .startnow .container {
+    padding: 132px 35px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .startnow .container {
+    padding: 132px 108px;
+  }
+}
+
 .startnow .btn-outline-success {
   background: white;
   color: rgb(0, 0, 54);

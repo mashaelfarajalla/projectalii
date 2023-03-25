@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar menuSection navbar-expand-lg navbar-light p-0">
+  <nav class="navbar menuSection navbar-expand-lg fixed-top navbar-light p-0">
     <div class="container-fluid bg-white">
       <a class="navbar-brand" href="#"
         ><img class="logo" src="../../public/images/logo.png" style=""
@@ -141,7 +141,7 @@ export default {
 </script>
 <style>
 .menuSection.fixed-top {
-  box-shadow: 0 4px 23px 3px #e0e0e0;
+  box-shadow: 0 0px 7px #d7d7d7;
 }
 
 nav.navbar div.container-fluid {

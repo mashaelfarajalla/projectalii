@@ -1,10 +1,10 @@
 <template>
-  <div class="container freelancerprofile mt-5">
+  <div class="container freelancerprofile mt-5" style="padding: 90px 20px">
     <div class="row" style="position: relative">
       <router-link
         :to="'/freelancer/'"
         class="btn-close"
-        style="position: absolute; top: 0; right: -65px"
+        style=""
       ></router-link>
       <div class="col-lg-3">
         <div class="row">
@@ -20,7 +20,7 @@
         </div>
         <div class="row mt-4">
           <h4>مواقع التواصل الاجتماعي</h4>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center mt-2">
             <div
               v-for="(i, index) in freelancer.socialmedai"
               :key="index"
@@ -37,16 +37,18 @@
           </div>
         </div>
         <div class="row mt-4">
-          <h4 class="text-center">معلومات عامة</h4>
+          <h4 class="">معلومات عامة</h4>
           <div
             v-for="(i, index) in freelancer.information"
             :key="index"
-            class="row justify-content-center"
+            class="row align-items-center my-2"
           >
-            <div class="col-1">
-              <i :class="i.icon"></i>
+            <div class="col-2">
+              <i :class="i.icon" style="font-size: 24px"></i>
             </div>
-            <div class="col-6">{{ i.information }}</div>
+            <div class="col-auto" style="font-size: 22px">
+              {{ i.information }}
+            </div>
           </div>
         </div>
       </div>
@@ -100,15 +102,78 @@
           <h3>معرض الاعمال</h3>
           <div class="row mt-2">
             <div
-              v-for="(item, index) in projects"
+              v-for="(item, index) in freelancer.projects"
               :key="index"
               class="col-lg-3 my-3"
               style="cursor: pointer"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              @click="senddata(index)"
             >
               <div class="card">
-                <img :src="freelancer.image" class="card-img-top" alt="..." />
+                <img :src="item.imagecover" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">المشروع الاول</h5>
+                  <h5 class="card-title">{{ item.title }}</h5>
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      <!-- {{ item.title }} -->
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <swiper
+                      ref="{swiperRef}"
+                      :slidesPerView="1"
+                      :centeredSlides="true"
+                      :spaceBetween="30"
+                      :pagination="{
+                        type: 'fraction',
+                      }"
+                      :navigation="true"
+                      :modules="modules"
+                      class="mySwiper"
+                    >
+                      <swiper-slide>Slide 1</swiper-slide>
+                      <swiper-slide>Slide 2</swiper-slide>
+                      <swiper-slide>Slide 3</swiper-slide>
+                      <swiper-slide>Slide 4</swiper-slide>
+                    </swiper>
+
+                    <p class="append-buttons"></p>
+
+                    <!-- {{ item.Projectdescription }} -->
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -120,15 +185,36 @@
 </template>
 <script>
 import axios from "axios";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper";
 
 export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Pagination, Navigation],
+    };
+  },
   data() {
     return {
       freelancer: [],
-      projects: 6,
+      project: [],
     };
   },
   methods: {
+    senddata(index) {
+      console.log(index);
+      this.project = this.freelancer.projects[index];
+      console.log(this.project);
+    },
+
     AddItem() {
       let inputtxt = document.getElementById("txt");
       let items = document.querySelector(".items");
@@ -171,3 +257,28 @@ export default {
   },
 };
 </script>
+<style>
+@media screen and (min-width: 992px) {
+  .freelancerprofile .btn-close {
+    top: 0;
+    right: -65px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .freelancerprofile .btn-close {
+    top: -35px;
+    right: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .freelancerprofile .btn-close {
+    top: 0;
+    right: -65px;
+  }
+}
+.freelancerprofile .btn-close {
+  position: absolute;
+}
+</style>

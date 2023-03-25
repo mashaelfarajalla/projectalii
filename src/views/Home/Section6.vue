@@ -98,6 +98,21 @@ export default {
 </script>
 
 <style>
+@media screen and (min-width: 992px) {
+  .homeservers button.nav-link {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .homeservers button.nav-link {
+    width: 400px;
+  }
+}
+
 .homeservers button.nav-link {
   display: flex;
   align-items: center;
@@ -106,7 +121,6 @@ export default {
 
   justify-content: center;
   position: relative;
-  width: 400px;
   height: 55px;
   text-align: center;
   transition: 0.3s;

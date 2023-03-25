@@ -3,9 +3,6 @@
   <section2Vue />
   <section3Vue />
 
-  <!--  
-
-   -->
   <section6Vue />
   <StartNow />
   <section5Vue />

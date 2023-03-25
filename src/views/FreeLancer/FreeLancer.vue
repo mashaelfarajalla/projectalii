@@ -1,13 +1,13 @@
 <template>
-  <div class="container mt-5 freelancer">
-    <div class="row">
-      <h2>المستقلين</h2>
+  <div class="container mt-5 freelancer" style="padding: 25px 20px">
+    <div class="row mt-5">
+      <h2 class="mt-5">المستقلين</h2>
     </div>
     <div class="row">
       <div
         v-for="(item, index) in freelancer"
         :key="index"
-        class="col-lg-3 my-3"
+        class="col-md-6 col-lg-3 my-3"
       >
         <div class="card">
           <img :src="item.image" class="card-img-top" alt="..." />

@@ -33,7 +33,7 @@
         </div>
       </div>
       <img
-        class="imagebackground"
+        class="imagebackground d-sm-none d-lg-block"
         src="../../../public/images/background-square-03-c58d9440.webp"
         style=""
       />
@@ -112,15 +112,13 @@ export default {
 
 @media screen and (max-width: 767px) {
   .homesection5 .imagebackground {
-    top: 155px;
-    left: -235px;
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .homesection5 .imagebackground {
-    top: 155px;
-    left: -207px;
+    display: none;
   }
 }
 </style>
