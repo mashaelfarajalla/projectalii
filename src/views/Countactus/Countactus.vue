@@ -1,5 +1,5 @@
 <template>
-  <div class="px-1 py-5 mx-auto mt-5 backgroundcolor" style="">
+  <div class="mx-auto mt-5 backgroundcolor" style="padding: 120px 45px">
     <div class="container" style="position: relative">
       <div class="row">
         <div class="col">

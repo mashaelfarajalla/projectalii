@@ -2,9 +2,9 @@
   <section class="homesection4 mb-5 mt-5 bg-white">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-center mt-5">
           <div class="text-box text-center">
-            <h2>المستقلين</h2>
+            <h2 class="mt-5">المستقلين</h2>
           </div>
         </div>
       </div>

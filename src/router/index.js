@@ -7,6 +7,8 @@ import CountactUs from "@/views/Countactus/CountactUs.vue";
 import Projects from "@/views/Projects/Projects.vue";
 import Projectdetails from "@/views/Projects/Projectdetails.vue";
 
+
+
 const routes = [
   {
     path: "/",

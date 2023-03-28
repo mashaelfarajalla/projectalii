@@ -3,7 +3,7 @@
     <div class="row">
       <h2>المشاريع</h2>
 
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
           <button
             class="nav-link active"
@@ -72,9 +72,9 @@
         >
           ...contact
         </div>
-      </div>
+      </div> -->
 
-      <!-- <ul class="text-center">
+      <ul class="text-center">
         <li class="d-inline" data-class="all">
           <a href="#all">all</a>
         </li>
@@ -111,7 +111,7 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -228,10 +228,10 @@ export default {
 
       if ($(this).data("class") === "all") {
         $(".shuffle-images .col-md-3").delay(300).fadeIn();
-      } else {
-        $(".shuffle-images .col-md-3").fadeOut();
-        $($(this).data("class")).delay(300).fadeIn();
-      }
+      } // else {
+      //   $(".shuffle-images .col-md-3").fadeOut();
+      //   $($(this).data("class")).delay(300).fadeIn();
+      // }
     });
 
     // End portfolio

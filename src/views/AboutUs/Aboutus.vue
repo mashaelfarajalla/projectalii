@@ -1,6 +1,6 @@
 <template>
-  <div class="container mt-5 aboutsection1">
-    <div class="row">
+  <div class="container my-5 aboutsection1" style="padding: 90px 20px">
+    <div class="row my-5">
       <div class="col-6 text-end">
         <h2>من نحن</h2>
         <p>

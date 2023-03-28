@@ -118,6 +118,26 @@
         </form>
 
         <button class="btn btn-outline-success" type="submit">ابدأ الان</button>
+        <button class="btn btn-outline-success dropdown" type="submit">
+          <a
+            class="dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-globe" style=""></i> اللغة
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="/index.html">Arabic </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/indexArt.html">English</a>
+            </li>
+          </ul>
+        </button>
       </div>
     </div>
   </nav>
@@ -200,16 +220,25 @@ nav button.btn-outline-success:hover,
   color: #03114c;
 }
 
+nav button i,
+nav button a {
+  color: white;
+}
+nav button:hover a,
+nav button:hover i {
+  color: #03114c;
+}
+
 nav i {
   font-size: 20px;
   margin: 0 10px;
   color: #03114c;
 }
 
-nav ul.dropdown-menu {
+/* nav ul.dropdown-menu {
   border: 2px solid rgba(0, 0, 0, 0.15);
   border-radius: 25px;
-}
+} */
 
 @media screen and (min-width: 992px) {
   nav .logo {

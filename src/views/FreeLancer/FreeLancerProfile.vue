@@ -130,7 +130,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
-                      <!-- {{ item.title }} -->
+                      {{ project.title }}
                     </h5>
                     <button
                       type="button"
@@ -140,27 +140,33 @@
                     ></button>
                   </div>
                   <div class="modal-body">
-                    <swiper
-                      ref="{swiperRef}"
-                      :slidesPerView="1"
-                      :centeredSlides="true"
-                      :spaceBetween="30"
-                      :pagination="{
-                        type: 'fraction',
-                      }"
-                      :navigation="true"
-                      :modules="modules"
-                      class="mySwiper"
-                    >
-                      <swiper-slide>Slide 1</swiper-slide>
-                      <swiper-slide>Slide 2</swiper-slide>
-                      <swiper-slide>Slide 3</swiper-slide>
-                      <swiper-slide>Slide 4</swiper-slide>
-                    </swiper>
-
+                    <div class="row justify-content-center">
+                      <swiper
+                        ref="{swiperRef}"
+                        :slidesPerView="1"
+                        :centeredSlides="true"
+                        :spaceBetween="30"
+                        :pagination="{
+                          type: 'fraction',
+                        }"
+                        :navigation="true"
+                        :modules="modules"
+                        class="mySwiper"
+                      >
+                        <swiper-slide
+                          v-for="(item, index) in project.albumimage"
+                          :key="index"
+                          ><img
+                            :src="item.image"
+                            style="width: 40%; height: 378px"
+                        /></swiper-slide>
+                      </swiper>
+                    </div>
                     <p class="append-buttons"></p>
 
-                    <!-- {{ item.Projectdescription }} -->
+                    <div class="row">
+                      <p>{{ project.Projectdescription }}</p>
+                    </div>
                   </div>
                   <div class="modal-footer">
                     <button
@@ -170,9 +176,9 @@
                     >
                       Close
                     </button>
-                    <button type="button" class="btn btn-primary">
+                    <!-- <button type="button" class="btn btn-primary">
                       Save changes
-                    </button>
+                    </button> -->
                   </div>
                 </div>
               </div>
@@ -258,6 +264,17 @@ export default {
 };
 </script>
 <style>
+.freelancerprofile .modal-body .swiper-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.freelancerprofile .modal-header .btn-close {
+  top: 20px;
+  left: 25px;
+  right: auto !important;
+}
+
 @media screen and (min-width: 992px) {
   .freelancerprofile .btn-close {
     top: 0;
