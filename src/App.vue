@@ -6,14 +6,16 @@
   <router-view />
   <FooterVue />
   <socialmedai />
+  <iconmessage />
 </template>
 
 <script>
 import HeaderVue from "./components/Header.vue";
 import FooterVue from "./components/Footer.vue";
 import socialmedai from "./components/socialmedai.vue";
+import iconmessage from "./views/iconmessage.vue";
 export default {
-  components: { HeaderVue, FooterVue, socialmedai },
+  components: { HeaderVue, FooterVue, socialmedai, iconmessage },
 };
 </script>
 <style>

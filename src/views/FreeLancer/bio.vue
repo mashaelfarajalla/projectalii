@@ -61,7 +61,7 @@
             </div>
           </div>
         </div>
-        <!-- <div
+        <div
           class="modal fade"
           id="exampleModal"
           tabindex="-1"
@@ -159,16 +159,31 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper";
 export default {
+  setup() {
+    return {
+      modules: [Pagination, Navigation],
+    };
+  },
+  components: { Swiper, SwiperSlide },
   props: ["biography", "skills", "projects"],
-
+  data() {
+    return {
+      project: [],
+    };
+  },
   methods: {
     AddItem() {
       let inputtxt = document.getElementById("txt");
@@ -196,12 +211,18 @@ export default {
         });
       }
     },
+    senddata(index) {
+      console.log(index);
+      this.project = this.projects[index];
+      console.log(this.project);
+    },
   },
   mounted() {
     const close = document.getElementsByClassName("iconclose");
     console.log(close);
     for (let i = 0; i < close.length; i++) {
       close[i].addEventListener("click", () => {
+        console.log("click");
         close[i].parentElement.style.display = "none";
       });
     }
