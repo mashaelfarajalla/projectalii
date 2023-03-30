@@ -71,4 +71,7 @@ p {
   line-height: 36px;
   opacity: 0.9;
 }
+i {
+  font-size: 19px;
+}
 </style>
