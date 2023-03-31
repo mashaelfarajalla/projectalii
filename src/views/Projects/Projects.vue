@@ -2,79 +2,43 @@
   <div id="" class="projectpage container-fluid">
     <div class="row">
       <h2>المشاريع</h2>
+      <div class="container">
+        <ul class="projects-tags">
+          <button id="all" class="active">All</button>
+        </ul>
+        <div class="row">
+          <ul class="projects-list">
+            <li
+              v-for="(item, index) in items"
+              :key="index"
+              class="project"
+              :data-tags="item.href"
+            >
+              <div v-for="(i, index) in item.children" :key="index">
+                <img :src="i.image" class="img-fluid" alt="" />
+                <div class="project-info">
+                  <h3>App One Page</h3>
+                  <p>
+                    Strona powstała poprzez przeniesienie darmowego PSD do HTML
+                    przy pomocy siatki Bootstrap oraz programu Gimp.
+                  </p>
+                  <div class="project-btns">
+                    <a href="../app-onepage" target="_blank" class="project-btn"
+                      ><i class="fa fa-external-link"></i>Show</a
+                    >
+                  </div>
+                  <!-- /.project-btns -->
+                </div>
+              </div>
 
-      <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active"
-            id="pills-home-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-home"
-            type="button"
-            role="tab"
-            aria-controls="pills-home"
-            aria-selected="true"
-          >
-            Home
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="pills-profile-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-profile"
-            type="button"
-            role="tab"
-            aria-controls="pills-profile"
-            aria-selected="false"
-          >
-            Profile
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="pills-contact-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-contact"
-            type="button"
-            role="tab"
-            aria-controls="pills-contact"
-            aria-selected="false"
-          >
-            Contact
-          </button>
-        </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div
-          class="tab-pane fade show active"
-          id="pills-home"
-          role="tabpanel"
-          aria-labelledby="pills-home-tab"
-        >
-          Home
+              <!-- /.project-info -->
+            </li>
+          </ul>
         </div>
-        <div
-          class="tab-pane fade"
-          id="pills-profile"
-          role="tabpanel"
-          aria-labelledby="pills-profile-tab"
-        >
-          profile
-        </div>
-        <div
-          class="tab-pane fade"
-          id="pills-contact"
-          role="tabpanel"
-          aria-labelledby="pills-contact-tab"
-        >
-          ...contact
-        </div>
-      </div> -->
+        <!-- /.projects-list -->
+      </div>
 
-      <ul class="text-center">
+      <!-- <ul class="text-center">
         <li class="d-inline" data-class="all">
           <a href="#all">all</a>
         </li>
@@ -111,7 +75,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -121,92 +85,168 @@ export default {
   data() {
     return {
       items: [
-        { id: 1, title: "الكل", href: "all", dot: "", active: "active" },
         {
-          id: 2,
-          title: "التصميم",
-          href: "print",
+          id: 1,
+          title: "HTML,Sass, UI",
+          href: "HTML,Sass, UI",
           dot: ".",
           children: [
             {
-              image: "images/6.png",
-              title: "Books",
-              span: "print / news",
+              image:
+                "https://www.dropbox.com/s/4ndmldp1edhdo7i/Blog-posts.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
             },
             {
-              image: "images/7.png",
-              title: "Catalogs",
-              span: "print / t-mobiles",
+              image:
+                "https://www.dropbox.com/s/c8p3wy2n4wd8jgc/Pizza_card.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+            },
+          ],
+        },
+
+        {
+          id: 2,
+          title: "HTML,CSS,PSD,Bootstrap",
+          href: "HTML,CSS,PSD,Bootstrap",
+          dot: ".",
+          children: [
+            {
+              image:
+                "https://www.dropbox.com/s/gqvlp97j1muij0y/App_Onepage.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
             },
           ],
         },
         {
           id: 3,
-          title: "ANIMATION",
-          href: "animation",
+          title: "HTML,CSS,jQuery",
+          href: "HTML,CSS,jQuery",
           dot: ".",
           children: [
             {
-              image: "images/5.png",
-              title: "carving",
-              span: "animation / carving",
+              image:
+                "https://www.dropbox.com/s/439g2tkjshppz1o/Countries.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
             },
           ],
         },
         {
           id: 4,
-          title: "الرسم",
-          href: "art",
+          title: "HTML, CSS, Bootstrap, jQuery",
+          href: "HTML, CSS, Bootstrap, jQuery",
           dot: ".",
           children: [
             {
-              image: "images/2.png",
-              title: "T-SHIRT DESIGN",
-              span: "art / t-shirt",
+              image:
+                "https://www.dropbox.com/s/ezjix1jmj1yynhq/Landing_page.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
             },
           ],
         },
         {
           id: 5,
-          title: "الويب",
-          href: "web",
+          title: "HTML,CSS",
+          href: "HTML,CSS",
           dot: ".",
           children: [
             {
-              image: "images/1.png",
-              title: "bootstrap4",
-              span: "web / t-shirt",
-            },
-            {
-              image: "images/4.png",
-              title: "responsive",
-              span: "web / mobile",
+              image:
+                "https://www.dropbox.com/s/4rsvlxjwjd314vr/Travel_onepage.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
             },
           ],
         },
         {
           id: 6,
-          title: "الفوتوغرافر",
-          href: "photography",
+          title: "JS,jQuery",
+          href: "JS,jQuery",
           dot: ".",
           children: [
             {
-              image: "images/3.png",
-              title: "Note Bools",
-              span: "photography / books",
+              image:
+                "https://www.dropbox.com/s/2ht000r5kd7wjp9/Quotes_rotator.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+            },
+            {
+              image:
+                "https://www.dropbox.com/s/5dpyvb2n2o9javv/Memory_game.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+            },
+            {
+              image:
+                "https://www.dropbox.com/s/6pb669d7v7vwf2k/Pricing_table.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+            },
+            {
+              image:
+                "https://www.dropbox.com/s/tkmxz04kcna22eg/Social_Card.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+            },
+            {
+              image:
+                "https://www.dropbox.com/s/7bcwoudaa60bp4e/Movie_card.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+            },
+            {
+              image:
+                "https://www.dropbox.com/s/fai1qm07d9nhwba/Hover_boxes.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+            },
+            {
+              image:
+                "https://www.dropbox.com/s/qhzsxylwggfih97/Autocomplete_UI.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
             },
           ],
         },
         {
           id: 7,
-          title: "الفيديو",
-          href: "video",
+          title: "HTML,Sass",
+          href: "HTML,Sass",
           dot: ".",
           children: [
             {
-              image: "images/8.png",
-              title: "Show",
-              span: "video / screens",
+              image:
+                "https://www.dropbox.com/s/6lh0zeko69ydxzz/Service_boxes.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+            },
+            {
+              image:
+                "https://www.dropbox.com/s/zper2pb96wf72tn/Login_form.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+            },
+            {
+              image:
+                "https://www.dropbox.com/s/287iki85wzooxgt/CSS_Accordion.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+            },
+            {
+              image:
+                "https://www.dropbox.com/s/jl4f24byocx40on/CSS_Tabs.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+            },
+            {
+              image:
+                "https://www.dropbox.com/s/ssc413p61af5vib/CSS_Tooltip.png?raw=1",
+              title: "App One Page",
+              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
             },
           ],
         },
@@ -219,69 +259,142 @@ export default {
       this.project = this.items[id];
     },
   },
+
   mounted() {
-    this.dataitem(0);
-    // Start portfolio
+    $(document).ready(function () {
+      var $projectsList = $(".projects-list");
+      var $projects = $projectsList.find(".project");
+      var $projectsTags = $(".projects-tags");
+      var tagsObj = {};
+      var fadeSpeed = 500;
 
-    $(".projectpage ul li").on("click", function () {
-      $(this).addClass("active").siblings().removeClass("active");
+      $projects.each(function () {
+        var project = this;
+        var $project = $(this);
+        var $tagsList = $project.find(".tags");
+        var tags = $project.data("tags").split(",");
+        tags.forEach(function (tag) {
+          // var li = '<li class="tag">';
+          // li += tag;
+          // li += "</li>";
+          // $tagsList.append($(li));
+          //same li or $(li)?
 
-      if ($(this).data("class") === "all") {
-        $(".shuffle-images .col-md-3").delay(300).fadeIn();
-      } // else {
-      //   $(".shuffle-images .col-md-3").fadeOut();
-      //   $($(this).data("class")).delay(300).fadeIn();
-      // }
+          if (!tagsObj.hasOwnProperty(tag)) tagsObj[tag] = [];
+          tagsObj[tag].push(project);
+        });
+      });
+
+      //console.log(tagsObj);
+      $.each(tagsObj, function (tag) {
+        var $button = $("<button>" + tag + "</button>");
+        $button
+          .on("click", function () {
+            if ($projects.is(":animated")) return false;
+            $(this).addClass("active").siblings().removeClass("active");
+            $projects.filter(":visible").fadeOut(fadeSpeed, function () {
+              $projects.filter(tagsObj[tag]).fadeIn(fadeSpeed);
+            });
+          })
+          .appendTo($projectsTags);
+      });
+
+      $("#all").on("click", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+        $projects.filter(":visible").fadeOut(fadeSpeed, function () {
+          $projects.fadeIn(fadeSpeed);
+        });
+      });
     });
-
-    // End portfolio
   },
 };
 </script>
-
 <style>
-.projectpage ul li {
-  margin: 0px 5px;
-  font-size: 21px;
-  padding: 8px 28px;
-}
-.projectpage ul li:hover,
-.projectpage ul li.active {
-  background: white;
-  box-shadow: 0 0 10px #e9e9e9;
-}
-.projectpage ul li:hover a,
-.projectpage ul li.active a {
-  color: #000949;
-}
-
-.projectpage .row .position:hover .overlay {
-  opacity: 85%;
-  cursor: pointer;
-}
-.projectpage .position {
-  position: relative;
-}
-
-.projectpage .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #000949;
-}
-.projectpage .text {
-  color: white;
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.projects-tags {
+  padding: 20px 10px;
   text-align: center;
-  top: 50%;
+}
+.projects-tags button {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0 3px;
+  padding: 5px 20px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  border: 2px #333 solid;
+}
+.projects-tags button:hover,
+.projects-tags button.active {
+  background-color: #fff;
+  color: #333;
+}
+.project {
+  width: 31.333%;
+  float: left;
+  margin: 1%;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 10px 5px -5px rgba(#000, 0.3);
+  font-size: 0;
+}
+.project img {
+  max-width: 100%;
+  transition: all 0.4s ease;
+}
+.project .project-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: calc(-100% + 65px);
+  padding: 10px 30px;
+  /* background-color: rgba(#fff, 0.7); */
+  background-color: rgb(255 255 255 / 0.7);
+  transition: all 0.4s ease;
+  font-size: 14px;
+  line-height: 20px;
+}
+.project .project-info h3 {
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 15px 0;
+}
+.project .project-info p {
+  transition: all 1s ease;
+  opacity: 0;
+}
+.project:hover .project-info {
+  bottom: 0;
+}
+.project:hover .project-info p {
+  opacity: 1;
+}
+.project:hover img {
+  transform: scale(1.2) rotate(3deg);
+}
+.project .project-btns {
+  text-align: center;
+  margin-top: 20px;
+}
+.project .project-btns .project-btn {
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 20px;
+  width: 100px;
+  /* text-align: center; */
+}
+.project .project-btns .project-btn:hover {
+  background: #fff;
+  color: #333;
 }
 </style>
