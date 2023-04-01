@@ -16,18 +16,16 @@
             >
               <img :src="item.image" class="img-fluid" alt="" />
               <div class="project-info">
-                <h3>App One Page</h3>
+                <h3>{{ item.title }}</h3>
                 <p>
-                  Strona powstała poprzez przeniesienie darmowego PSD do HTML
-                  przy pomocy siatki Bootstrap oraz programu Gimp.
+                  {{ item.detalis.substring(0, 110) + "..." }}
                 </p>
                 <div class="project-btns">
                   <router-link
                     :to="'/projects/Projectdetails/' + item.id"
                     class="project-btn"
                     ><i class="fa fa-external-link"></i>Show
-                    {{ item.id }}</router-link
-                  >
+                  </router-link>
                 </div>
                 <!-- /.project-btns -->
               </div>
@@ -39,44 +37,8 @@
         <!-- /.projects-list -->
       </div>
 
-      <!-- <ul class="text-center">
-        <li class="d-inline" data-class="all">
-          <a href="#all">all</a>
-        </li>
-        <li
-          v-for="(i, index) in items"
-          :key="index"
-          class="d-inline"
-          :class="items.active"
-          :data-class="i.dot + i.href"
-          @click="dataitem(index)"
-        >
-          <a :href="'#' + i.href">{{ i.title }}</a>
-        </li>
-      </ul>
-      <div class="container-fluid mt-5">
-        <div class="shuffle-images">
-          <div class="row">
-            <div
-              v-for="(i, index) in project.children"
-              :key="index"
-              class="col-6 col-md-3 p-0 position"
-              :class="project.href"
-            >
-              <div class="port">
-                <img :src="i.image" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text text1">
-                    <div class="borderline"></div>
-                    <h5>{{ i.title }}</h5>
-                    <p>{{ i.span }}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      
+   
     </div>
   </div>
 </template>
@@ -323,21 +285,20 @@ export default {
 }
 .projects-tags button {
   display: inline-block;
-  background: #333;
+  background: #001e4a;
   color: #fff;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 20px;
   margin: 0 3px;
-  padding: 5px 20px;
+  padding: 15px;
   font-weight: 400;
-  border: none;
   cursor: pointer;
-  border: 2px #333 solid;
+  border: 3px #001e4a solid;
 }
 .projects-tags button:hover,
 .projects-tags button.active {
   background-color: #fff;
-  color: #333;
+  color: #001e4a;
 }
 .project {
   width: 31.333%;
@@ -346,7 +307,8 @@ export default {
   background: #fff;
   position: relative;
   overflow: hidden;
-  box-shadow: 0px 10px 5px -5px rgba(#000, 0.3);
+  /* box-shadow: 0px 10px 5px -5px rgba(255 255 255 / 0.3); */
+  box-shadow: 0px 10px 5px -5px rgba(164 164 164 / 30%);
   font-size: 0;
 }
 .project img {
@@ -390,7 +352,7 @@ export default {
   margin-top: 20px;
 }
 .project .project-btns .project-btn {
-  background: #333;
+  background: #001e4a;
   color: #fff;
   text-decoration: none;
   display: block;
@@ -402,6 +364,6 @@ export default {
 }
 .project .project-btns .project-btn:hover {
   background: #fff;
-  color: #333;
+  color: #001e4a;
 }
 </style>

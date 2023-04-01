@@ -111,9 +111,10 @@
                     <div
                       class="col-auto mx-2"
                       style="
-                        padding: 16px;
-                        background: #cecece66;
-                        border-radius: 14px;
+                        background: white;
+                        padding: 18px;
+                        border-radius: 45px;
+                        box-shadow: rgb(191 191 191) 4px 4px 8px;
                       "
                     >
                       HTML
@@ -121,9 +122,10 @@
                     <div
                       class="col-auto mx-2"
                       style="
-                        padding: 16px;
-                        background: #cecece66;
-                        border-radius: 14px;
+                        background: white;
+                        padding: 18px;
+                        border-radius: 45px;
+                        box-shadow: rgb(191 191 191) 4px 4px 8px;
                       "
                     >
                       JavaScript
@@ -131,9 +133,10 @@
                     <div
                       class="col-auto mx-2"
                       style="
-                        padding: 16px;
-                        background: #cecece66;
-                        border-radius: 14px;
+                        background: white;
+                        padding: 18px;
+                        border-radius: 45px;
+                        box-shadow: rgb(191 191 191) 4px 4px 8px;
                       "
                     >
                       Css
@@ -237,6 +240,8 @@ export default {
   border-radius: 25px;
   margin: 10px 5px;
   cursor: pointer;
+
+  box-shadow: rgb(191 191 191) 4px 4px 8px;
 }
 .freelancerprofile .item:hover span,
 .freelancerprofile .item:hover {
