@@ -9,26 +9,27 @@
         <div class="row">
           <ul class="projects-list">
             <li
-              v-for="(item, index) in items"
+              v-for="(item, index) in projects"
               :key="index"
-              class="project"
+              class="col-3 project"
               :data-tags="item.href"
             >
-              <div v-for="(i, index) in item.children" :key="index">
-                <img :src="i.image" class="img-fluid" alt="" />
-                <div class="project-info">
-                  <h3>App One Page</h3>
-                  <p>
-                    Strona powstała poprzez przeniesienie darmowego PSD do HTML
-                    przy pomocy siatki Bootstrap oraz programu Gimp.
-                  </p>
-                  <div class="project-btns">
-                    <a href="../app-onepage" target="_blank" class="project-btn"
-                      ><i class="fa fa-external-link"></i>Show</a
-                    >
-                  </div>
-                  <!-- /.project-btns -->
+              <img :src="item.image" class="img-fluid" alt="" />
+              <div class="project-info">
+                <h3>App One Page</h3>
+                <p>
+                  Strona powstała poprzez przeniesienie darmowego PSD do HTML
+                  przy pomocy siatki Bootstrap oraz programu Gimp.
+                </p>
+                <div class="project-btns">
+                  <router-link
+                    :to="'/projects/Projectdetails/' + item.id"
+                    class="project-btn"
+                    ><i class="fa fa-external-link"></i>Show
+                    {{ item.id }}</router-link
+                  >
                 </div>
+                <!-- /.project-btns -->
               </div>
 
               <!-- /.project-info -->
@@ -81,176 +82,178 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
-      items: [
-        {
-          id: 1,
-          title: "HTML,Sass, UI",
-          href: "HTML,Sass, UI",
-          dot: ".",
-          children: [
-            {
-              image:
-                "https://www.dropbox.com/s/4ndmldp1edhdo7i/Blog-posts.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-            {
-              image:
-                "https://www.dropbox.com/s/c8p3wy2n4wd8jgc/Pizza_card.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-          ],
-        },
+      // items: [
+      //   {
+      //     id: 1,
+      //     title: "HTML,Sass, UI",
+      //     href: "HTML,Sass, UI",
+      //     dot: ".",
+      //     children: [
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/4ndmldp1edhdo7i/Blog-posts.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/c8p3wy2n4wd8jgc/Pizza_card.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //     ],
+      //   },
 
-        {
-          id: 2,
-          title: "HTML,CSS,PSD,Bootstrap",
-          href: "HTML,CSS,PSD,Bootstrap",
-          dot: ".",
-          children: [
-            {
-              image:
-                "https://www.dropbox.com/s/gqvlp97j1muij0y/App_Onepage.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-          ],
-        },
-        {
-          id: 3,
-          title: "HTML,CSS,jQuery",
-          href: "HTML,CSS,jQuery",
-          dot: ".",
-          children: [
-            {
-              image:
-                "https://www.dropbox.com/s/439g2tkjshppz1o/Countries.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-          ],
-        },
-        {
-          id: 4,
-          title: "HTML, CSS, Bootstrap, jQuery",
-          href: "HTML, CSS, Bootstrap, jQuery",
-          dot: ".",
-          children: [
-            {
-              image:
-                "https://www.dropbox.com/s/ezjix1jmj1yynhq/Landing_page.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-          ],
-        },
-        {
-          id: 5,
-          title: "HTML,CSS",
-          href: "HTML,CSS",
-          dot: ".",
-          children: [
-            {
-              image:
-                "https://www.dropbox.com/s/4rsvlxjwjd314vr/Travel_onepage.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-          ],
-        },
-        {
-          id: 6,
-          title: "JS,jQuery",
-          href: "JS,jQuery",
-          dot: ".",
-          children: [
-            {
-              image:
-                "https://www.dropbox.com/s/2ht000r5kd7wjp9/Quotes_rotator.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-            {
-              image:
-                "https://www.dropbox.com/s/5dpyvb2n2o9javv/Memory_game.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-            {
-              image:
-                "https://www.dropbox.com/s/6pb669d7v7vwf2k/Pricing_table.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-            {
-              image:
-                "https://www.dropbox.com/s/tkmxz04kcna22eg/Social_Card.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-            {
-              image:
-                "https://www.dropbox.com/s/7bcwoudaa60bp4e/Movie_card.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-            {
-              image:
-                "https://www.dropbox.com/s/fai1qm07d9nhwba/Hover_boxes.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-            {
-              image:
-                "https://www.dropbox.com/s/qhzsxylwggfih97/Autocomplete_UI.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-          ],
-        },
-        {
-          id: 7,
-          title: "HTML,Sass",
-          href: "HTML,Sass",
-          dot: ".",
-          children: [
-            {
-              image:
-                "https://www.dropbox.com/s/6lh0zeko69ydxzz/Service_boxes.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-            {
-              image:
-                "https://www.dropbox.com/s/zper2pb96wf72tn/Login_form.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-            {
-              image:
-                "https://www.dropbox.com/s/287iki85wzooxgt/CSS_Accordion.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-            {
-              image:
-                "https://www.dropbox.com/s/jl4f24byocx40on/CSS_Tabs.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-            {
-              image:
-                "https://www.dropbox.com/s/ssc413p61af5vib/CSS_Tooltip.png?raw=1",
-              title: "App One Page",
-              span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
-            },
-          ],
-        },
-      ],
+      //   {
+      //     id: 2,
+      //     title: "HTML,CSS,PSD,Bootstrap",
+      //     href: "HTML,CSS,PSD,Bootstrap",
+      //     dot: ".",
+      //     children: [
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/gqvlp97j1muij0y/App_Onepage.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     id: 3,
+      //     title: "HTML,CSS,jQuery",
+      //     href: "HTML,CSS,jQuery",
+      //     dot: ".",
+      //     children: [
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/439g2tkjshppz1o/Countries.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     id: 4,
+      //     title: "HTML, CSS, Bootstrap, jQuery",
+      //     href: "HTML, CSS, Bootstrap, jQuery",
+      //     dot: ".",
+      //     children: [
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/ezjix1jmj1yynhq/Landing_page.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     id: 5,
+      //     title: "HTML,CSS",
+      //     href: "HTML,CSS",
+      //     dot: ".",
+      //     children: [
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/4rsvlxjwjd314vr/Travel_onepage.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     id: 6,
+      //     title: "JS,jQuery",
+      //     href: "JS,jQuery",
+      //     dot: ".",
+      //     children: [
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/2ht000r5kd7wjp9/Quotes_rotator.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/5dpyvb2n2o9javv/Memory_game.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/6pb669d7v7vwf2k/Pricing_table.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/tkmxz04kcna22eg/Social_Card.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/7bcwoudaa60bp4e/Movie_card.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/fai1qm07d9nhwba/Hover_boxes.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/qhzsxylwggfih97/Autocomplete_UI.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     id: 7,
+      //     title: "HTML,Sass",
+      //     href: "HTML,Sass",
+      //     dot: ".",
+      //     children: [
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/6lh0zeko69ydxzz/Service_boxes.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/zper2pb96wf72tn/Login_form.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/287iki85wzooxgt/CSS_Accordion.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/jl4f24byocx40on/CSS_Tabs.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //       {
+      //         image:
+      //           "https://www.dropbox.com/s/ssc413p61af5vib/CSS_Tooltip.png?raw=1",
+      //         title: "App One Page",
+      //         span: "  Strona powstała poprzez przeniesienie darmowego PSD do HTML przypomocy siatki Bootstrap oraz programu Gimp.",
+      //       },
+      //     ],
+      //   },
+      // ],
+      projects: [],
       project: [],
     };
   },
@@ -260,7 +263,11 @@ export default {
     },
   },
 
-  mounted() {
+  async mounted() {
+    let result = await axios.get("http://localhost:3000/projects");
+    this.projects = result.data;
+    console.log(this.projects);
+
     $(document).ready(function () {
       var $projectsList = $(".projects-list");
       var $projects = $projectsList.find(".project");
@@ -334,7 +341,7 @@ export default {
 }
 .project {
   width: 31.333%;
-  float: left;
+  float: right;
   margin: 1%;
   background: #fff;
   position: relative;
