@@ -1,7 +1,12 @@
 <template>
   <div class="projectdetails">
-    <div class="container">
-      <div class="row" style="padding: 175px 0">
+    <div class="container" style="padding: 175px 0">
+      <div class="row">
+        <div class="col">
+          <h2>{{ project.title }}</h2>
+        </div>
+      </div>
+      <div class="row mt-5">
         <div class="col-8">
           <swiper
             :pagination="{
@@ -20,14 +25,16 @@
             </swiper-slide>
           </swiper>
 
-          <h3>{{ project.title }}</h3>
-          <p>{{ project.detalis }}</p>
+          <div class="mt-5" style="padding: 0 33px">
+            <h3>{{ project.title }}</h3>
+            <p class="mt-3">{{ project.detalis }}</p>
+          </div>
         </div>
-        <div class="col-4">
-          <h3>المهارات المستخدمة</h3>
-          <div class="row">
+        <div class="col-4 mt-5">
+          <h3 class="mt-4">المهارات المستخدمة</h3>
+          <div class="row mt-4">
             <div
-              class="col-auto mx-2"
+              class="col-auto mx-2 my-2"
               style="
                 background: white;
                 padding: 18px;
@@ -38,7 +45,7 @@
               HTML
             </div>
             <div
-              class="col-auto mx-2"
+              class="col-auto mx-2 my-2"
               style="
                 background: white;
                 padding: 18px;
@@ -49,7 +56,7 @@
               JavaScript
             </div>
             <div
-              class="col-auto mx-2"
+              class="col-auto mx-2 my-2"
               style="
                 background: white;
                 padding: 18px;
@@ -61,8 +68,29 @@
             </div>
           </div>
 
-          <h3>المستقلين</h3>
-          <div class="card">
+          <h3 class="mt-5">المستقلين</h3>
+          <div class="card my-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-3 imagecol">
+                  <img
+                    src="../../../public/images/img3.jpg"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="col-auto d-flex align-items-center justify-content-center flex-column"
+                >
+                  <p>mashael farajallah</p>
+                  <p>مصصم واجهات</p>
+                </div>
+                <div class="col-auto d-flex align-items-center">
+                  <a href="#">عرض الملف الشخصي</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card my-4">
             <div class="card-body">
               <div class="row">
                 <div class="col-3 imagecol">
@@ -138,8 +166,11 @@ export default {
 .projectdetails .swiper-pagination-progressbar {
   background: white !important;
 }
-.projectdetails .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    background: #030357;}
+.projectdetails
+  .swiper-pagination-progressbar
+  .swiper-pagination-progressbar-fill {
+  background: #030357;
+}
 
 .projectdetails .swiper-wrapper {
   margin-top: 20px;

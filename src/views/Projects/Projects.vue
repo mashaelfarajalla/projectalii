@@ -16,6 +16,11 @@
             >
               <img :src="item.image" class="img-fluid" alt="" />
               <div class="project-info">
+                <input
+                  :value="item.dep"
+                  id="department"
+                  class="d-none department"
+                />
                 <h3>{{ item.title }}</h3>
                 <p>
                   {{ item.detalis.substring(0, 110) + "..." }}
@@ -36,9 +41,6 @@
         </div>
         <!-- /.projects-list -->
       </div>
-
-      
-   
     </div>
   </div>
 </template>
@@ -228,7 +230,7 @@ export default {
   async mounted() {
     let result = await axios.get("http://localhost:3000/projects");
     this.projects = result.data;
-    console.log(this.projects);
+    // console.log(this.projects);
 
     $(document).ready(function () {
       var $projectsList = $(".projects-list");

@@ -10,6 +10,7 @@
             Hire Great Freelancers, Fast. Spacelance helps you hire elite
             freelancers at a moment's notice
           </h4>
+          <p>{{ $t("message") }}</p>
 
           <div class="row my-4">
             <form class="d-flex justify-content-center">
@@ -38,11 +39,21 @@
 </template>
 
 <script>
+import { useI18n } from "vue-i18n";
+
 export default {
   data() {
     return {
       image: "images/img1.png",
     };
+  },
+  setup() {
+    const { t } = useI18n({
+      inheritLocale: true,
+      useScope: "local",
+    });
+
+    return { t };
   },
 };
 </script>
