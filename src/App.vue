@@ -4,6 +4,7 @@
   </div>
   <HeaderVue />
   <router-view />
+  <ABS />
   <FooterVue />
   <socialmedai />
   <iconmessage />
@@ -14,26 +15,52 @@ import HeaderVue from "./components/Header.vue";
 import FooterVue from "./components/Footer.vue";
 import socialmedai from "./components/socialmedai.vue";
 import iconmessage from "./views/iconmessage.vue";
+import ABS from "./views/ABS.vue";
+
 export default {
-  components: { HeaderVue, FooterVue, socialmedai, iconmessage },
+  components: { HeaderVue, FooterVue, socialmedai, iconmessage, ABS },
 };
 </script>
 <style>
+@media screen and (min-width: 992px) {
+  #progress {
+    bottom: 40px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #progress {
+    bottom: 15px;
+    right: 10px;
+    width: 55px;
+    height: 55px;
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #progress {
+    bottom: 40px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 #progress {
   position: fixed;
-  /* background: #03114c; */
-  bottom: 40px;
-  right: 10px;
-  width: 70px;
-  height: 70px;
   border-radius: 50%;
   z-index: 2;
   color: #03114c;
-  font-size: 35px;
   display: flex;
   align-items: center;
   justify-content: center;

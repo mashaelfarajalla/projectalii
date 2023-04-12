@@ -16,7 +16,7 @@
         <div
           v-for="(item, index) in number"
           :key="index"
-          class="col-10 col-md-5 col-lg-auto mx-3 item"
+          class="col-10 col-md-5 col-lg-auto mx-3 my-4 item"
         >
           <img
             src="../../../public/images/11331m.png"

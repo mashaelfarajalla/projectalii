@@ -5,11 +5,11 @@
   >
     <div class="container">
       <div class="row justify-content-center align-items-center">
-        <div class="col-lg-4">
+        <div class="col-sm-6 col-lg-4">
           <h4>تصفح المشاريع</h4>
           <p>ابدأ الان لرؤية المزيد من الخدمات</p>
         </div>
-        <div class="col-lg-3">
+        <div class="col-sm-6 col-lg-3">
           <button class="btn btn-outline-success" type="submit">
             ابدأ الان
           </button>

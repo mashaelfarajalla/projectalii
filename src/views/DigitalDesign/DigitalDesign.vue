@@ -1,13 +1,13 @@
 <template>
-  <div class="projectdetails">
-    <div class="container" style="padding: 175px 0">
+  <div class="digitaldesign">
+    <diV class="container" style="padding: 175px 0">
       <div class="row">
         <div class="col">
-          <h2>{{ project.title }}</h2>
+          <h2>{{ degitaldesgin.title }}</h2>
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-8">
+        <div class="col-7">
           <swiper
             :pagination="{
               type: 'progressbar',
@@ -18,16 +18,16 @@
           >
             <swiper-slide
               class="d-flex align-items-center justify-content-center"
-              v-for="(item, index) in project.imagechild"
+              v-for="(item, index) in degitaldesgin.childimage"
               :key="index"
             >
-              <img :src="item.imagechilds" />
+              <img :src="item.image" />
             </swiper-slide>
           </swiper>
 
           <div class="mt-5" style="padding: 0 33px">
-            <h3>{{ project.title }}</h3>
-            <p class="mt-3">{{ project.detalis }}</p>
+            <!-- <h3>{{ project.title }}</h3> -->
+            <p class="mt-3">{{ degitaldesgin.details }}</p>
           </div>
         </div>
         <div class="col-4 mt-5">
@@ -113,12 +113,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </diV>
   </div>
 </template>
 
 <script>
-import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/vue";
 
 import "swiper/css";
@@ -127,10 +126,12 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Pagination, Navigation } from "swiper";
+import axios from "axios";
+
 export default {
   data() {
     return {
-      project: [],
+      degitaldesgin: [],
     };
   },
   components: {
@@ -142,82 +143,15 @@ export default {
       modules: [Pagination, Navigation],
     };
   },
+
   async mounted() {
     let result = await axios.get(
-      "http://localhost:3000/projects/" + this.$route.params.id
+      "http://localhost:3000/degitaldesgin/" + this.$route.params.id
     );
-    this.project = result.data;
-    console.log(this.project);
+    this.degitaldesgin = result.data;
+    console.log(this.degitaldesgin);
   },
 };
 </script>
 
-<style>
-@media (min-width: 1400px) {
-  .projectdetails .container,
-  .projectdetails .container-lg,
-  .projectdetails .container-md,
-  .projectdetails .container-sm,
-  .projectdetails .container-xl,
-  .projectdetails .container-xxl,
-  .digitaldesign .container,
-  .digitaldesign .container-lg,
-  .digitaldesign .container-md,
-  .digitaldesign .container-sm,
-  .digitaldesign .container-xl,
-  .digitaldesign .container-xxl {
-    max-width: 1590px;
-  }
-}
-
-.digitaldesign .swiper-pagination-progressbar,
-.projectdetails .swiper-pagination-progressbar {
-  background: white !important;
-}
-.projectdetails
-  .swiper-pagination-progressbar
-  .swiper-pagination-progressbar-fill,
-.digitaldesign
-  .swiper-pagination-progressbar
-  .swiper-pagination-progressbar-fill {
-  background: #030357;
-}
-
-.projectdetails .swiper-wrapper,
-.digitaldesign .swiper-wrapper {
-  margin-top: 20px;
-}
-
-.projectdetails .swiper-button-prev,
-.projectdetails .swiper-button-next,
-.digitaldesign .swiper-button-prev,
-.digitaldesign .swiper-button-next {
-  width: 60px;
-  height: 60px;
-  background: white;
-  border-radius: 50%;
-}
-.projectdetails .swiper-button-next:after,
-.projectdetails .swiper-button-prev:after,
-.digitaldesign .swiper-button-next:after,
-.digitaldesign .swiper-button-prev:after {
-  font-size: 25px !important;
-}
-
-.projectdetails .card-body .imagecol,
-.projectdetails .card-body .imagecol img,
-.digitaldesign .card-body .imagecol,
-.digitaldesign .card-body .imagecol img {
-  border-radius: 50%;
-}
-.projectdetails .card,
-.digitaldesign .card {
-  border: 0;
-  border-radius: 25px;
-  box-shadow: 0px 10px 5px -5px rgba(164 164 164 / 30%);
-}
-.projectdetails .card-body p,
-.digitaldesign .card-body p {
-  margin-bottom: 0;
-}
-</style>
+<style></style>

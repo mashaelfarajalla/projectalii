@@ -17,13 +17,39 @@ export default {};
 </script>
 
 <style>
+@media screen and (min-width: 992px) {
+  .iconmessage {
+    width: 72px;
+    height: 72px;
+    bottom: 35px;
+    left: 55px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .iconmessage {
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    left: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .iconmessage {
+    width: 72px;
+    height: 72px;
+    bottom: 35px;
+    left: 55px;
+  }
+}
+
 .iconmessage {
   position: fixed;
-  width: 72px;
-  height: 72px;
+
   background: #03114c;
   border-radius: 50%;
-  bottom: 35px;
-  left: 55px;
+
+  z-index: 2;
 }
 </style>

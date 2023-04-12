@@ -35,10 +35,12 @@ a:hover .lineseeall {
 /*Section1Home style start*/
 @media screen and (min-width: 992px) {
     .homesection1 {
-        height: 650px;
+        /* height: 650px;
         display: flex;
         position: relative;
-        align-items: center;
+        align-items: center; */
+
+        padding: 165px 0
     }
 
     /* .homesection1 .container {

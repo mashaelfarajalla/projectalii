@@ -44,13 +44,13 @@
             <div class="card-body">
               <h5 class="card-title text-center">{{ item.title }}</h5>
               <p class="card-text">
-                {{ item.details }}
+                {{ item.details.substring(0, 75) + "..." }}
               </p>
-              <a
-                href="#"
+              <router-link
+                :to="'/digitaldesign/' + item.id"
                 class="hvr-icon-wobble-horizontal d-flex align-items-center justify-content-start"
                 >قراءة المزيد <i class="fa-solid fa-arrow-left-long mx-2"></i>
-              </a>
+              </router-link>
             </div></div
         ></swiper-slide>
       </swiper>

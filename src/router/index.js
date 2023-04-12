@@ -6,10 +6,21 @@ import FreeLancerProfile from "@/views/FreeLancer/FreeLancerProfile.vue";
 import CountactUs from "@/views/Countactus/CountactUs.vue";
 import Projects from "@/views/Projects/Projects.vue";
 import Projectdetails from "@/views/Projects/Projectdetails.vue";
-
-
-
+import DigitalDesign from "@/views/DigitalDesign/DigitalDesign.vue";
 const routes = [
+  {
+    path: "/",
+    redirect: "/en",
+    //`/${i18n.loacle}`
+  },
+  // {
+  //   path: "/:lang",
+  //   component: {
+  //     render(c) {
+  //       return c("router-view");
+  //     },
+  //   },
+  //   children: [
   {
     path: "/",
     name: "Home",
@@ -45,6 +56,13 @@ const routes = [
     name: "Projectdetails",
     component: Projectdetails,
   },
+  {
+    path: "/digitaldesign/:id",
+    name: "DigitalDesign",
+    component: DigitalDesign,
+  },
+  //   ],
+  // },
 ];
 
 const router = createRouter({

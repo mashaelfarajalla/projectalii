@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto mt-5 backgroundcolor" style="padding: 120px 45px">
+  <div class="mx-auto mt-5 backgroundcolor">
     <div class="container" style="position: relative">
       <div class="row">
         <div class="col">
@@ -128,6 +128,18 @@ export default {
 </script>
 
 <style>
+@media screen and (min-width: 992px) {
+  .backgroundcolor {
+    padding: 120px 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
 .backgroundcolor h3,
 .backgroundcolor .p {
   color: rgb(1, 6, 60);

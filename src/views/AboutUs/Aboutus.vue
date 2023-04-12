@@ -64,7 +64,7 @@
         :key="index"
         class="col-lg-4 text-end"
       >
-        <h3>{{ item.title }}</h3>
+        <h3><img :src="item.icon" /> {{ item.title }}</h3>
         <ul>
           <li v-for="i in item.child" :key="i.id">{{ i.name }}</li>
         </ul>
@@ -172,10 +172,10 @@ export default {
 <style>
 .aboutsection1 .row ul {
   height: 255px;
-  background: #adc5c8;
+  background: #4a757bb8;
   padding: 44px;
   /* box-shadow: 6px 24px 25px 5px rgb(135 135 135 / 20%); */
-  box-shadow: 5px 23px 24px rgb(183 187 192 / 40%);
+  box-shadow: 0px 13px 19px rgb(183 187 192 / 40%);
 }
 
 .aboutsection1 .row ul li {

@@ -202,15 +202,15 @@ nav form input:focus ~ span {
   background-color: white;
 }
 
-.navbar .navbar-nav .nav-link {
-  color: #796d6d;
-  font-weight: 400;
+.navbar .navbar-nav a {
+  color: rgb(92 102 114 / 84%) !important;
   font-size: 18px;
+  font-weight: 400;
 }
-
 .navbar .navbar-nav a:hover,
 .navbar .navbar-nav a.router-link-exact-active {
-  color: #1436c8 !important;
+  color: #183d74 !important;
+  font-weight: 500;
 }
 
 nav button.btn-outline-success:hover,
