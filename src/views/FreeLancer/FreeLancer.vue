@@ -46,4 +46,21 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.freelancer .card {
+  border-radius: 20px;
+  box-shadow: 0px 2px 14px 1px #ebebeb9c;
+  border: 0;
+  align-items: center;
+}
+
+.freelancer .card-img-top {
+  margin-top: 20px;
+  border-radius: 50%;
+  width: 85% !important;
+}
+
+.freelancer a {
+  color: #0c52a1;
+}
+</style>

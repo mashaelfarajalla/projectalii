@@ -1,7 +1,7 @@
 <template>
   <div class="col-lg-3">
     <div class="row">
-      <div class="card" style="padding: 25px">
+      <div class="card align-items-center" style="padding: 25px">
         <img :src="image" class="card-img-top" alt="..." />
         <div class="card-body text-center">
           <h5 class="card-title">{{ name }}</h5>

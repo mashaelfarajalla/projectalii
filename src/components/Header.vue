@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar menuSection navbar-expand-lg fixed-top navbar-light p-0">
-    <div class="container-fluid bg-white">
+  <nav class="navbar menuSection fixed-top navbar-expand-lg navbar-light p-0">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#"
         ><img class="logo" src="../../public/images/logo.png" style=""
       /></a>
@@ -118,7 +118,7 @@
         </form>
 
         <button class="btn btn-outline-success" type="submit">ابدأ الان</button>
-        <button class="btn btn-outline-success dropdown" type="submit">
+        <button class="btn dropdown" type="submit">
           <a
             class="dropdown-toggle"
             href="#"
@@ -162,10 +162,11 @@ export default {
 <style>
 .menuSection.fixed-top {
   box-shadow: 0 0px 7px #d7d7d7;
+  background-color: white;
 }
 
 nav.navbar div.container-fluid {
-  padding: 20px 25px;
+  padding: 20px 65px;
 }
 
 nav form input.form-control {
@@ -204,7 +205,6 @@ nav form input:focus ~ span {
 
 .navbar .navbar-nav a {
   color: rgb(92 102 114 / 84%) !important;
-  font-size: 18px;
   font-weight: 400;
 }
 .navbar .navbar-nav a:hover,
@@ -218,6 +218,10 @@ nav button.btn-outline-success:hover,
   background-color: white;
   border: 2px solid #03114c;
   color: #03114c;
+}
+nav button.btn.dropdown i,
+nav button.btn.dropdown a {
+  color: #03114c !important;
 }
 
 nav button i,

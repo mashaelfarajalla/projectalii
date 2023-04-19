@@ -108,8 +108,7 @@ export default {
 
 <style>
 .homesection2 .row {
-  /* padding: 85px 0px; */
-  padding: 40px 0px;
+  padding: 50px 0px;
 }
 .homesection2 .bagsection2 {
   background-color: #001527a6;

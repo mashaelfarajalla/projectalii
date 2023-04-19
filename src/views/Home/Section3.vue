@@ -2,7 +2,7 @@
   <div class="container homesection3">
     <div class="row justify-content-center text-center">
       <div class="col-10">
-        <h2 class="mt-5">التصميم الرقمي</h2>
+        <h2 class="">التصميم الرقمي</h2>
         <p class="mt-4 text-center">
           التصميم الرقمي هو أي نوع من التصميم يظهر في تنسيق رقمي على تطبيق أو
           موقع ويب. إنه نوع من الاتصال المرئي يقدم معلومات أو منتجًا أو خدمة من
@@ -42,20 +42,21 @@
           ><div class="card rounded-3">
             <img :src="item.image" class="card-img-top rounded-3" alt="..." />
             <div class="card-body">
-              <h5 class="card-title text-center">{{ item.title }}</h5>
-              <p class="card-text">
-                {{ item.details.substring(0, 75) + "..." }}
-              </p>
-              <router-link
-                :to="'/digitaldesign/' + item.id"
-                class="hvr-icon-wobble-horizontal d-flex align-items-center justify-content-start"
-                >قراءة المزيد <i class="fa-solid fa-arrow-left-long mx-2"></i>
-              </router-link>
+              <div class="cardbodydetials">
+                <h5 class="card-title text-center">{{ item.title }}</h5>
+                <p class="card-text">
+                  {{ item.details.substring(0, 75) + "..." }}
+                </p>
+                <router-link
+                  :to="'/digitaldesign/' + item.id"
+                  class="hvr-icon-wobble-horizontal d-flex align-items-center justify-content-start"
+                  >قراءة المزيد <i class="fa-solid fa-arrow-left-long mx-2"></i>
+                </router-link>
+              </div>
             </div></div
         ></swiper-slide>
       </swiper>
     </div>
-    <SeeAll />
   </div>
 </template>
 <script>
@@ -98,9 +99,11 @@ export default {
 
 <style>
 .homesection3 {
-  padding: 30px 22px;
+  padding: 85px 0;
 }
-
+.homesection3 .swiper-wrapper {
+  height: 530px;
+}
 .homesection3 h2,
 .homesection4 h2,
 .homesection5 h2 {
@@ -142,7 +145,16 @@ export default {
 }
 
 .homesection3 .card {
-  padding: 15px;
+  /* padding: 15px; */
+  /* background-color: #fbfbfb; */
+  box-shadow: 3px 2px 20px #dfdfdf;
+  border: 0;
+}
+.homesection3 .card .card-body .cardbodydetials {
+  margin-top: -55px;
+  background: white;
+  padding: 31px;
+  border-radius: 15px;
 }
 .homesection3 .card p {
   font-size: 17px;

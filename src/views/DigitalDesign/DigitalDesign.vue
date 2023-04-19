@@ -7,7 +7,7 @@
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-7">
+        <div class="col-8">
           <swiper
             :pagination="{
               type: 'progressbar',
