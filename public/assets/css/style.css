@@ -2,15 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700&family=Noto+Sans+Arabic&display=swap');
 
 body {
-    /* background-color: #F2FAFA; */
-    /* background: #f7f8fc; */
-
     background: linear-gradient(218deg, #f7f8fc, #f9fafe);
-
-
-    /* background: linear-gradient(65deg, #f7f8fc, #e4e8f9); */
-    /* font-family: 'Poppins'; */
-    /* background: linear-gradient(185deg, #f7f8fc, #00156d); */
     font-size: 16px;
     font-family: 'Noto Kufi Arabic', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', "sans-serif";
 }
